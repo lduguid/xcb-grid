@@ -1,0 +1,7 @@
+sample	mass_kg	charge_c	wavelength_m	label
+alpha	1.67e-27	1.602e-19	6.56e-7	H-alpha
+beta	9.11e-31	-1.602e-19	4.86e-7	e-
+gamma	6.64e-27	3.204e-19	1.21e-7	He+
+delta	1.99e30	0	5.00e-7	sun-ref
+epsilon	1.67e-27	0	2.20e-6	n
+zeta	4.00e-26	-3.204e-19	3.30e-6	ion

@@ -1,0 +1,13 @@
+order_id,date,customer,sku,qty,unit_price,notes
+1001,2026-01-04,Northwind Ltd,SKU-104,12,19.50,"rush, dock 3"
+1002,2026-01-05,Contoso,SKU-211,3,240.00,standard
+1003,2026-01-05,Fabrikam,SKU-104,48,18.25,"bulk discount, net 30"
+1004,2026-01-06,Adventure Works,SKU-880,1,1299.00,"fragile, ""white glove"""
+1005,2026-01-08,Northwind Ltd,SKU-211,7,240.00,backorder
+1006,2026-01-09,Litware,SKU-055,20,6.75,promo
+1007,2026-01-12,Contoso,SKU-880,2,1249.00,price match
+1008,2026-01-13,Wide World,SKU-104,6,19.50,""
+1009,2026-01-15,Fabrikam,SKU-055,100,5.90,"warehouse B, aisle 12"
+1010,2026-01-18,Adventure Works,SKU-211,1,240.00,sample
+1011,2026-01-20,Litware,SKU-104,15,19.50,repeat
+1012,2026-01-22,Northwind Ltd,SKU-055,8,6.75,promo

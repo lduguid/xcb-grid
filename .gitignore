@@ -1,0 +1,5 @@
+xcb-grid
+test_table
+*.o
+*.exe
+testdata/stress_records.tsv

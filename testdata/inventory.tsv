@@ -1,0 +1,9 @@
+sku	desc	on_hand	reorder	bin	unit_cost
+A-100	#2 pencil box	240	80	A12	1.15
+A-220	graph pad 50ct	18	24	A12	3.40
+B-010	HDMI 2m	0	12	B03	6.20
+B-011	HDMI 3m	7	12	B03	7.80
+C-501	toner black	4	2	C01	64.00
+C-502	toner cyan	1	2	C01	68.50
+D-077	label roll	130	40	D18	9.95
+E-003	spare hinge	2	6	E09	0.45

@@ -1,0 +1,2501 @@
+id	ts	host	level	latency_ms	bytes	msg
+1	1700000013	web-2	INFO	7	81	query ok
+2	1700000026	api-1	INFO	14	98	cache miss
+3	1700000039	api-2	WARN	21	115	retry scheduled
+4	1700000052	worker-a	DEBUG	28	132	timeout waiting on upstream
+5	1700000065	worker-b	ERROR	35	149	wrote batch
+6	1700000078	cache-1	INFO	42	166	auth ok
+7	1700000091	web-1	INFO	49	183	rate limited
+8	1700000104	web-2	INFO	56	200	accepted connection
+9	1700000117	api-1	WARN	63	217	query ok
+10	1700000130	api-2	DEBUG	70	234	cache miss
+11	1700000143	worker-a	ERROR	77	251	retry scheduled
+12	1700000156	worker-b	INFO	84	268	timeout waiting on upstream
+13	1700000169	cache-1	INFO	91	285	wrote batch
+14	1700000182	web-1	INFO	98	302	auth ok
+15	1700000195	web-2	WARN	105	319	rate limited
+16	1700000208	api-1	DEBUG	112	336	accepted connection
+17	1700000221	api-2	ERROR	119	353	query ok
+18	1700000234	worker-a	INFO	126	370	cache miss
+19	1700000247	worker-b	INFO	133	387	retry scheduled
+20	1700000260	cache-1	INFO	140	404	timeout waiting on upstream
+21	1700000273	web-1	WARN	147	421	wrote batch
+22	1700000286	web-2	DEBUG	154	438	auth ok
+23	1700000299	api-1	ERROR	161	455	rate limited
+24	1700000312	api-2	INFO	168	472	accepted connection
+25	1700000325	worker-a	INFO	175	489	query ok
+26	1700000338	worker-b	INFO	182	506	cache miss
+27	1700000351	cache-1	WARN	189	523	retry scheduled
+28	1700000364	web-1	DEBUG	196	540	timeout waiting on upstream
+29	1700000377	web-2	ERROR	203	557	wrote batch
+30	1700000390	api-1	INFO	210	574	auth ok
+31	1700000403	api-2	INFO	217	591	rate limited
+32	1700000416	worker-a	INFO	224	608	accepted connection
+33	1700000429	worker-b	WARN	231	625	query ok
+34	1700000442	cache-1	DEBUG	238	642	cache miss
+35	1700000455	web-1	ERROR	245	659	retry scheduled
+36	1700000468	web-2	INFO	252	676	timeout waiting on upstream
+37	1700000481	api-1	INFO	259	693	wrote batch
+38	1700000494	api-2	INFO	266	710	auth ok
+39	1700000507	worker-a	WARN	273	727	rate limited
+40	1700000520	worker-b	DEBUG	280	744	accepted connection
+41	1700000533	cache-1	ERROR	287	761	query ok
+42	1700000546	web-1	INFO	294	778	cache miss
+43	1700000559	web-2	INFO	301	795	retry scheduled
+44	1700000572	api-1	INFO	308	812	timeout waiting on upstream
+45	1700000585	api-2	WARN	315	829	wrote batch
+46	1700000598	worker-a	DEBUG	322	846	auth ok
+47	1700000611	worker-b	ERROR	329	863	rate limited
+48	1700000624	cache-1	INFO	336	880	accepted connection
+49	1700000637	web-1	INFO	343	897	query ok
+50	1700000650	web-2	INFO	350	914	cache miss
+51	1700000663	api-1	WARN	357	931	retry scheduled
+52	1700000676	api-2	DEBUG	364	948	timeout waiting on upstream
+53	1700000689	worker-a	ERROR	371	965	wrote batch
+54	1700000702	worker-b	INFO	378	982	auth ok
+55	1700000715	cache-1	INFO	385	999	rate limited
+56	1700000728	web-1	INFO	392	1016	accepted connection
+57	1700000741	web-2	WARN	399	1033	query ok
+58	1700000754	api-1	DEBUG	406	1050	cache miss
+59	1700000767	api-2	ERROR	413	1067	retry scheduled
+60	1700000780	worker-a	INFO	420	1084	timeout waiting on upstream
+61	1700000793	worker-b	INFO	427	1101	wrote batch
+62	1700000806	cache-1	INFO	434	1118	auth ok
+63	1700000819	web-1	WARN	441	1135	rate limited
+64	1700000832	web-2	DEBUG	448	1152	accepted connection
+65	1700000845	api-1	ERROR	455	1169	query ok
+66	1700000858	api-2	INFO	462	1186	cache miss
+67	1700000871	worker-a	INFO	469	1203	retry scheduled
+68	1700000884	worker-b	INFO	476	1220	timeout waiting on upstream
+69	1700000897	cache-1	WARN	483	1237	wrote batch
+70	1700000910	web-1	DEBUG	490	1254	auth ok
+71	1700000923	web-2	ERROR	497	1271	rate limited
+72	1700000936	api-1	INFO	504	1288	accepted connection
+73	1700000949	api-2	INFO	511	1305	query ok
+74	1700000962	worker-a	INFO	518	1322	cache miss
+75	1700000975	worker-b	WARN	525	1339	retry scheduled
+76	1700000988	cache-1	DEBUG	532	1356	timeout waiting on upstream
+77	1700001001	web-1	ERROR	539	1373	wrote batch
+78	1700001014	web-2	INFO	546	1390	auth ok
+79	1700001027	api-1	INFO	553	1407	rate limited
+80	1700001040	api-2	INFO	560	1424	accepted connection
+81	1700001053	worker-a	WARN	567	1441	query ok
+82	1700001066	worker-b	DEBUG	574	1458	cache miss
+83	1700001079	cache-1	ERROR	581	1475	retry scheduled
+84	1700001092	web-1	INFO	588	1492	timeout waiting on upstream
+85	1700001105	web-2	INFO	595	1509	wrote batch
+86	1700001118	api-1	INFO	602	1526	auth ok
+87	1700001131	api-2	WARN	609	1543	rate limited
+88	1700001144	worker-a	DEBUG	616	1560	accepted connection
+89	1700001157	worker-b	ERROR	623	1577	query ok
+90	1700001170	cache-1	INFO	630	1594	cache miss
+91	1700001183	web-1	INFO	637	1611	retry scheduled
+92	1700001196	web-2	INFO	644	1628	timeout waiting on upstream
+93	1700001209	api-1	WARN	651	1645	wrote batch
+94	1700001222	api-2	DEBUG	658	1662	auth ok
+95	1700001235	worker-a	ERROR	665	1679	rate limited
+96	1700001248	worker-b	INFO	672	1696	accepted connection
+97	1700001261	cache-1	INFO	679	1713	query ok
+98	1700001274	web-1	INFO	686	1730	cache miss
+99	1700001287	web-2	WARN	693	1747	retry scheduled
+100	1700001300	api-1	DEBUG	700	1764	timeout waiting on upstream
+101	1700001313	api-2	ERROR	707	1781	wrote batch
+102	1700001326	worker-a	INFO	714	1798	auth ok
+103	1700001339	worker-b	INFO	721	1815	rate limited
+104	1700001352	cache-1	INFO	728	1832	accepted connection
+105	1700001365	web-1	WARN	735	1849	query ok
+106	1700001378	web-2	DEBUG	742	1866	cache miss
+107	1700001391	api-1	ERROR	749	1883	retry scheduled
+108	1700001404	api-2	INFO	756	1900	timeout waiting on upstream
+109	1700001417	worker-a	INFO	763	1917	wrote batch
+110	1700001430	worker-b	INFO	770	1934	auth ok
+111	1700001443	cache-1	WARN	777	1951	rate limited
+112	1700001456	web-1	DEBUG	784	1968	accepted connection
+113	1700001469	web-2	ERROR	791	1985	query ok
+114	1700001482	api-1	INFO	798	2002	cache miss
+115	1700001495	api-2	INFO	805	2019	retry scheduled
+116	1700001508	worker-a	INFO	812	2036	timeout waiting on upstream
+117	1700001521	worker-b	WARN	819	2053	wrote batch
+118	1700001534	cache-1	DEBUG	826	2070	auth ok
+119	1700001547	web-1	ERROR	833	2087	rate limited
+120	1700001560	web-2	INFO	840	2104	accepted connection
+121	1700001573	api-1	INFO	847	2121	query ok
+122	1700001586	api-2	INFO	854	2138	cache miss
+123	1700001599	worker-a	WARN	861	2155	retry scheduled
+124	1700001612	worker-b	DEBUG	868	2172	timeout waiting on upstream
+125	1700001625	cache-1	ERROR	875	2189	wrote batch
+126	1700001638	web-1	INFO	882	2206	auth ok
+127	1700001651	web-2	INFO	889	2223	rate limited
+128	1700001664	api-1	INFO	896	2240	accepted connection
+129	1700001677	api-2	WARN	3	2257	query ok
+130	1700001690	worker-a	DEBUG	10	2274	cache miss
+131	1700001703	worker-b	ERROR	17	2291	retry scheduled
+132	1700001716	cache-1	INFO	24	2308	timeout waiting on upstream
+133	1700001729	web-1	INFO	31	2325	wrote batch
+134	1700001742	web-2	INFO	38	2342	auth ok
+135	1700001755	api-1	WARN	45	2359	rate limited
+136	1700001768	api-2	DEBUG	52	2376	accepted connection
+137	1700001781	worker-a	ERROR	59	2393	query ok
+138	1700001794	worker-b	INFO	66	2410	cache miss
+139	1700001807	cache-1	INFO	73	2427	retry scheduled
+140	1700001820	web-1	INFO	80	2444	timeout waiting on upstream
+141	1700001833	web-2	WARN	87	2461	wrote batch
+142	1700001846	api-1	DEBUG	94	2478	auth ok
+143	1700001859	api-2	ERROR	101	2495	rate limited
+144	1700001872	worker-a	INFO	108	2512	accepted connection
+145	1700001885	worker-b	INFO	115	2529	query ok
+146	1700001898	cache-1	INFO	122	2546	cache miss
+147	1700001911	web-1	WARN	129	2563	retry scheduled
+148	1700001924	web-2	DEBUG	136	2580	timeout waiting on upstream
+149	1700001937	api-1	ERROR	143	2597	wrote batch
+150	1700001950	api-2	INFO	150	2614	auth ok
+151	1700001963	worker-a	INFO	157	2631	rate limited
+152	1700001976	worker-b	INFO	164	2648	accepted connection
+153	1700001989	cache-1	WARN	171	2665	query ok
+154	1700002002	web-1	DEBUG	178	2682	cache miss
+155	1700002015	web-2	ERROR	185	2699	retry scheduled
+156	1700002028	api-1	INFO	192	2716	timeout waiting on upstream
+157	1700002041	api-2	INFO	199	2733	wrote batch
+158	1700002054	worker-a	INFO	206	2750	auth ok
+159	1700002067	worker-b	WARN	213	2767	rate limited
+160	1700002080	cache-1	DEBUG	220	2784	accepted connection
+161	1700002093	web-1	ERROR	227	2801	query ok
+162	1700002106	web-2	INFO	234	2818	cache miss
+163	1700002119	api-1	INFO	241	2835	retry scheduled
+164	1700002132	api-2	INFO	248	2852	timeout waiting on upstream
+165	1700002145	worker-a	WARN	255	2869	wrote batch
+166	1700002158	worker-b	DEBUG	262	2886	auth ok
+167	1700002171	cache-1	ERROR	269	2903	rate limited
+168	1700002184	web-1	INFO	276	2920	accepted connection
+169	1700002197	web-2	INFO	283	2937	query ok
+170	1700002210	api-1	INFO	290	2954	cache miss
+171	1700002223	api-2	WARN	297	2971	retry scheduled
+172	1700002236	worker-a	DEBUG	304	2988	timeout waiting on upstream
+173	1700002249	worker-b	ERROR	311	3005	wrote batch
+174	1700002262	cache-1	INFO	318	3022	auth ok
+175	1700002275	web-1	INFO	325	3039	rate limited
+176	1700002288	web-2	INFO	332	3056	accepted connection
+177	1700002301	api-1	WARN	339	3073	query ok
+178	1700002314	api-2	DEBUG	346	3090	cache miss
+179	1700002327	worker-a	ERROR	353	3107	retry scheduled
+180	1700002340	worker-b	INFO	360	3124	timeout waiting on upstream
+181	1700002353	cache-1	INFO	367	3141	wrote batch
+182	1700002366	web-1	INFO	374	3158	auth ok
+183	1700002379	web-2	WARN	381	3175	rate limited
+184	1700002392	api-1	DEBUG	388	3192	accepted connection
+185	1700002405	api-2	ERROR	395	3209	query ok
+186	1700002418	worker-a	INFO	402	3226	cache miss
+187	1700002431	worker-b	INFO	409	3243	retry scheduled
+188	1700002444	cache-1	INFO	416	3260	timeout waiting on upstream
+189	1700002457	web-1	WARN	423	3277	wrote batch
+190	1700002470	web-2	DEBUG	430	3294	auth ok
+191	1700002483	api-1	ERROR	437	3311	rate limited
+192	1700002496	api-2	INFO	444	3328	accepted connection
+193	1700002509	worker-a	INFO	451	3345	query ok
+194	1700002522	worker-b	INFO	458	3362	cache miss
+195	1700002535	cache-1	WARN	465	3379	retry scheduled
+196	1700002548	web-1	DEBUG	472	3396	timeout waiting on upstream
+197	1700002561	web-2	ERROR	479	3413	wrote batch
+198	1700002574	api-1	INFO	486	3430	auth ok
+199	1700002587	api-2	INFO	493	3447	rate limited
+200	1700002600	worker-a	INFO	500	3464	accepted connection
+201	1700002613	worker-b	WARN	507	3481	query ok
+202	1700002626	cache-1	DEBUG	514	3498	cache miss
+203	1700002639	web-1	ERROR	521	3515	retry scheduled
+204	1700002652	web-2	INFO	528	3532	timeout waiting on upstream
+205	1700002665	api-1	INFO	535	3549	wrote batch
+206	1700002678	api-2	INFO	542	3566	auth ok
+207	1700002691	worker-a	WARN	549	3583	rate limited
+208	1700002704	worker-b	DEBUG	556	3600	accepted connection
+209	1700002717	cache-1	ERROR	563	3617	query ok
+210	1700002730	web-1	INFO	570	3634	cache miss
+211	1700002743	web-2	INFO	577	3651	retry scheduled
+212	1700002756	api-1	INFO	584	3668	timeout waiting on upstream
+213	1700002769	api-2	WARN	591	3685	wrote batch
+214	1700002782	worker-a	DEBUG	598	3702	auth ok
+215	1700002795	worker-b	ERROR	605	3719	rate limited
+216	1700002808	cache-1	INFO	612	3736	accepted connection
+217	1700002821	web-1	INFO	619	3753	query ok
+218	1700002834	web-2	INFO	626	3770	cache miss
+219	1700002847	api-1	WARN	633	3787	retry scheduled
+220	1700002860	api-2	DEBUG	640	3804	timeout waiting on upstream
+221	1700002873	worker-a	ERROR	647	3821	wrote batch
+222	1700002886	worker-b	INFO	654	3838	auth ok
+223	1700002899	cache-1	INFO	661	3855	rate limited
+224	1700002912	web-1	INFO	668	3872	accepted connection
+225	1700002925	web-2	WARN	675	3889	query ok
+226	1700002938	api-1	DEBUG	682	3906	cache miss
+227	1700002951	api-2	ERROR	689	3923	retry scheduled
+228	1700002964	worker-a	INFO	696	3940	timeout waiting on upstream
+229	1700002977	worker-b	INFO	703	3957	wrote batch
+230	1700002990	cache-1	INFO	710	3974	auth ok
+231	1700003003	web-1	WARN	717	3991	rate limited
+232	1700003016	web-2	DEBUG	724	4008	accepted connection
+233	1700003029	api-1	ERROR	731	4025	query ok
+234	1700003042	api-2	INFO	738	4042	cache miss
+235	1700003055	worker-a	INFO	745	4059	retry scheduled
+236	1700003068	worker-b	INFO	752	4076	timeout waiting on upstream
+237	1700003081	cache-1	WARN	759	4093	wrote batch
+238	1700003094	web-1	DEBUG	766	4110	auth ok
+239	1700003107	web-2	ERROR	773	4127	rate limited
+240	1700003120	api-1	INFO	780	4144	accepted connection
+241	1700003133	api-2	INFO	787	4161	query ok
+242	1700003146	worker-a	INFO	794	4178	cache miss
+243	1700003159	worker-b	WARN	801	4195	retry scheduled
+244	1700003172	cache-1	DEBUG	808	4212	timeout waiting on upstream
+245	1700003185	web-1	ERROR	815	4229	wrote batch
+246	1700003198	web-2	INFO	822	4246	auth ok
+247	1700003211	api-1	INFO	829	4263	rate limited
+248	1700003224	api-2	INFO	836	4280	accepted connection
+249	1700003237	worker-a	WARN	843	4297	query ok
+250	1700003250	worker-b	DEBUG	850	4314	cache miss
+251	1700003263	cache-1	ERROR	857	4331	retry scheduled
+252	1700003276	web-1	INFO	864	4348	timeout waiting on upstream
+253	1700003289	web-2	INFO	871	4365	wrote batch
+254	1700003302	api-1	INFO	878	4382	auth ok
+255	1700003315	api-2	WARN	885	4399	rate limited
+256	1700003328	worker-a	DEBUG	892	4416	accepted connection
+257	1700003341	worker-b	ERROR	899	4433	query ok
+258	1700003354	cache-1	INFO	6	4450	cache miss
+259	1700003367	web-1	INFO	13	4467	retry scheduled
+260	1700003380	web-2	INFO	20	4484	timeout waiting on upstream
+261	1700003393	api-1	WARN	27	4501	wrote batch
+262	1700003406	api-2	DEBUG	34	4518	auth ok
+263	1700003419	worker-a	ERROR	41	4535	rate limited
+264	1700003432	worker-b	INFO	48	4552	accepted connection
+265	1700003445	cache-1	INFO	55	4569	query ok
+266	1700003458	web-1	INFO	62	4586	cache miss
+267	1700003471	web-2	WARN	69	4603	retry scheduled
+268	1700003484	api-1	DEBUG	76	4620	timeout waiting on upstream
+269	1700003497	api-2	ERROR	83	4637	wrote batch
+270	1700003510	worker-a	INFO	90	4654	auth ok
+271	1700003523	worker-b	INFO	97	4671	rate limited
+272	1700003536	cache-1	INFO	104	4688	accepted connection
+273	1700003549	web-1	WARN	111	4705	query ok
+274	1700003562	web-2	DEBUG	118	4722	cache miss
+275	1700003575	api-1	ERROR	125	4739	retry scheduled
+276	1700003588	api-2	INFO	132	4756	timeout waiting on upstream
+277	1700003601	worker-a	INFO	139	4773	wrote batch
+278	1700003614	worker-b	INFO	146	4790	auth ok
+279	1700003627	cache-1	WARN	153	4807	rate limited
+280	1700003640	web-1	DEBUG	160	4824	accepted connection
+281	1700003653	web-2	ERROR	167	4841	query ok
+282	1700003666	api-1	INFO	174	4858	cache miss
+283	1700003679	api-2	INFO	181	4875	retry scheduled
+284	1700003692	worker-a	INFO	188	4892	timeout waiting on upstream
+285	1700003705	worker-b	WARN	195	4909	wrote batch
+286	1700003718	cache-1	DEBUG	202	4926	auth ok
+287	1700003731	web-1	ERROR	209	4943	rate limited
+288	1700003744	web-2	INFO	216	4960	accepted connection
+289	1700003757	api-1	INFO	223	4977	query ok
+290	1700003770	api-2	INFO	230	4994	cache miss
+291	1700003783	worker-a	WARN	237	5011	retry scheduled
+292	1700003796	worker-b	DEBUG	244	5028	timeout waiting on upstream
+293	1700003809	cache-1	ERROR	251	5045	wrote batch
+294	1700003822	web-1	INFO	258	5062	auth ok
+295	1700003835	web-2	INFO	265	5079	rate limited
+296	1700003848	api-1	INFO	272	5096	accepted connection
+297	1700003861	api-2	WARN	279	5113	query ok
+298	1700003874	worker-a	DEBUG	286	5130	cache miss
+299	1700003887	worker-b	ERROR	293	5147	retry scheduled
+300	1700003900	cache-1	INFO	300	5164	timeout waiting on upstream
+301	1700003913	web-1	INFO	307	5181	wrote batch
+302	1700003926	web-2	INFO	314	5198	auth ok
+303	1700003939	api-1	WARN	321	5215	rate limited
+304	1700003952	api-2	DEBUG	328	5232	accepted connection
+305	1700003965	worker-a	ERROR	335	5249	query ok
+306	1700003978	worker-b	INFO	342	5266	cache miss
+307	1700003991	cache-1	INFO	349	5283	retry scheduled
+308	1700004004	web-1	INFO	356	5300	timeout waiting on upstream
+309	1700004017	web-2	WARN	363	5317	wrote batch
+310	1700004030	api-1	DEBUG	370	5334	auth ok
+311	1700004043	api-2	ERROR	377	5351	rate limited
+312	1700004056	worker-a	INFO	384	5368	accepted connection
+313	1700004069	worker-b	INFO	391	5385	query ok
+314	1700004082	cache-1	INFO	398	5402	cache miss
+315	1700004095	web-1	WARN	405	5419	retry scheduled
+316	1700004108	web-2	DEBUG	412	5436	timeout waiting on upstream
+317	1700004121	api-1	ERROR	419	5453	wrote batch
+318	1700004134	api-2	INFO	426	5470	auth ok
+319	1700004147	worker-a	INFO	433	5487	rate limited
+320	1700004160	worker-b	INFO	440	5504	accepted connection
+321	1700004173	cache-1	WARN	447	5521	query ok
+322	1700004186	web-1	DEBUG	454	5538	cache miss
+323	1700004199	web-2	ERROR	461	5555	retry scheduled
+324	1700004212	api-1	INFO	468	5572	timeout waiting on upstream
+325	1700004225	api-2	INFO	475	5589	wrote batch
+326	1700004238	worker-a	INFO	482	5606	auth ok
+327	1700004251	worker-b	WARN	489	5623	rate limited
+328	1700004264	cache-1	DEBUG	496	5640	accepted connection
+329	1700004277	web-1	ERROR	503	5657	query ok
+330	1700004290	web-2	INFO	510	5674	cache miss
+331	1700004303	api-1	INFO	517	5691	retry scheduled
+332	1700004316	api-2	INFO	524	5708	timeout waiting on upstream
+333	1700004329	worker-a	WARN	531	5725	wrote batch
+334	1700004342	worker-b	DEBUG	538	5742	auth ok
+335	1700004355	cache-1	ERROR	545	5759	rate limited
+336	1700004368	web-1	INFO	552	5776	accepted connection
+337	1700004381	web-2	INFO	559	5793	query ok
+338	1700004394	api-1	INFO	566	5810	cache miss
+339	1700004407	api-2	WARN	573	5827	retry scheduled
+340	1700004420	worker-a	DEBUG	580	5844	timeout waiting on upstream
+341	1700004433	worker-b	ERROR	587	5861	wrote batch
+342	1700004446	cache-1	INFO	594	5878	auth ok
+343	1700004459	web-1	INFO	601	5895	rate limited
+344	1700004472	web-2	INFO	608	5912	accepted connection
+345	1700004485	api-1	WARN	615	5929	query ok
+346	1700004498	api-2	DEBUG	622	5946	cache miss
+347	1700004511	worker-a	ERROR	629	5963	retry scheduled
+348	1700004524	worker-b	INFO	636	5980	timeout waiting on upstream
+349	1700004537	cache-1	INFO	643	5997	wrote batch
+350	1700004550	web-1	INFO	650	6014	auth ok
+351	1700004563	web-2	WARN	657	6031	rate limited
+352	1700004576	api-1	DEBUG	664	6048	accepted connection
+353	1700004589	api-2	ERROR	671	6065	query ok
+354	1700004602	worker-a	INFO	678	6082	cache miss
+355	1700004615	worker-b	INFO	685	6099	retry scheduled
+356	1700004628	cache-1	INFO	692	6116	timeout waiting on upstream
+357	1700004641	web-1	WARN	699	6133	wrote batch
+358	1700004654	web-2	DEBUG	706	6150	auth ok
+359	1700004667	api-1	ERROR	713	6167	rate limited
+360	1700004680	api-2	INFO	720	6184	accepted connection
+361	1700004693	worker-a	INFO	727	6201	query ok
+362	1700004706	worker-b	INFO	734	6218	cache miss
+363	1700004719	cache-1	WARN	741	6235	retry scheduled
+364	1700004732	web-1	DEBUG	748	6252	timeout waiting on upstream
+365	1700004745	web-2	ERROR	755	6269	wrote batch
+366	1700004758	api-1	INFO	762	6286	auth ok
+367	1700004771	api-2	INFO	769	6303	rate limited
+368	1700004784	worker-a	INFO	776	6320	accepted connection
+369	1700004797	worker-b	WARN	783	6337	query ok
+370	1700004810	cache-1	DEBUG	790	6354	cache miss
+371	1700004823	web-1	ERROR	797	6371	retry scheduled
+372	1700004836	web-2	INFO	804	6388	timeout waiting on upstream
+373	1700004849	api-1	INFO	811	6405	wrote batch
+374	1700004862	api-2	INFO	818	6422	auth ok
+375	1700004875	worker-a	WARN	825	6439	rate limited
+376	1700004888	worker-b	DEBUG	832	6456	accepted connection
+377	1700004901	cache-1	ERROR	839	6473	query ok
+378	1700004914	web-1	INFO	846	6490	cache miss
+379	1700004927	web-2	INFO	853	6507	retry scheduled
+380	1700004940	api-1	INFO	860	6524	timeout waiting on upstream
+381	1700004953	api-2	WARN	867	6541	wrote batch
+382	1700004966	worker-a	DEBUG	874	6558	auth ok
+383	1700004979	worker-b	ERROR	881	6575	rate limited
+384	1700004992	cache-1	INFO	888	6592	accepted connection
+385	1700005005	web-1	INFO	895	6609	query ok
+386	1700005018	web-2	INFO	2	6626	cache miss
+387	1700005031	api-1	WARN	9	6643	retry scheduled
+388	1700005044	api-2	DEBUG	16	6660	timeout waiting on upstream
+389	1700005057	worker-a	ERROR	23	6677	wrote batch
+390	1700005070	worker-b	INFO	30	6694	auth ok
+391	1700005083	cache-1	INFO	37	6711	rate limited
+392	1700005096	web-1	INFO	44	6728	accepted connection
+393	1700005109	web-2	WARN	51	6745	query ok
+394	1700005122	api-1	DEBUG	58	6762	cache miss
+395	1700005135	api-2	ERROR	65	6779	retry scheduled
+396	1700005148	worker-a	INFO	72	6796	timeout waiting on upstream
+397	1700005161	worker-b	INFO	79	6813	wrote batch
+398	1700005174	cache-1	INFO	86	6830	auth ok
+399	1700005187	web-1	WARN	93	6847	rate limited
+400	1700005200	web-2	DEBUG	100	6864	accepted connection
+401	1700005213	api-1	ERROR	107	6881	query ok
+402	1700005226	api-2	INFO	114	6898	cache miss
+403	1700005239	worker-a	INFO	121	6915	retry scheduled
+404	1700005252	worker-b	INFO	128	6932	timeout waiting on upstream
+405	1700005265	cache-1	WARN	135	6949	wrote batch
+406	1700005278	web-1	DEBUG	142	6966	auth ok
+407	1700005291	web-2	ERROR	149	6983	rate limited
+408	1700005304	api-1	INFO	156	7000	accepted connection
+409	1700005317	api-2	INFO	163	7017	query ok
+410	1700005330	worker-a	INFO	170	7034	cache miss
+411	1700005343	worker-b	WARN	177	7051	retry scheduled
+412	1700005356	cache-1	DEBUG	184	7068	timeout waiting on upstream
+413	1700005369	web-1	ERROR	191	7085	wrote batch
+414	1700005382	web-2	INFO	198	7102	auth ok
+415	1700005395	api-1	INFO	205	7119	rate limited
+416	1700005408	api-2	INFO	212	7136	accepted connection
+417	1700005421	worker-a	WARN	219	7153	query ok
+418	1700005434	worker-b	DEBUG	226	7170	cache miss
+419	1700005447	cache-1	ERROR	233	7187	retry scheduled
+420	1700005460	web-1	INFO	240	7204	timeout waiting on upstream
+421	1700005473	web-2	INFO	247	7221	wrote batch
+422	1700005486	api-1	INFO	254	7238	auth ok
+423	1700005499	api-2	WARN	261	7255	rate limited
+424	1700005512	worker-a	DEBUG	268	7272	accepted connection
+425	1700005525	worker-b	ERROR	275	7289	query ok
+426	1700005538	cache-1	INFO	282	7306	cache miss
+427	1700005551	web-1	INFO	289	7323	retry scheduled
+428	1700005564	web-2	INFO	296	7340	timeout waiting on upstream
+429	1700005577	api-1	WARN	303	7357	wrote batch
+430	1700005590	api-2	DEBUG	310	7374	auth ok
+431	1700005603	worker-a	ERROR	317	7391	rate limited
+432	1700005616	worker-b	INFO	324	7408	accepted connection
+433	1700005629	cache-1	INFO	331	7425	query ok
+434	1700005642	web-1	INFO	338	7442	cache miss
+435	1700005655	web-2	WARN	345	7459	retry scheduled
+436	1700005668	api-1	DEBUG	352	7476	timeout waiting on upstream
+437	1700005681	api-2	ERROR	359	7493	wrote batch
+438	1700005694	worker-a	INFO	366	7510	auth ok
+439	1700005707	worker-b	INFO	373	7527	rate limited
+440	1700005720	cache-1	INFO	380	7544	accepted connection
+441	1700005733	web-1	WARN	387	7561	query ok
+442	1700005746	web-2	DEBUG	394	7578	cache miss
+443	1700005759	api-1	ERROR	401	7595	retry scheduled
+444	1700005772	api-2	INFO	408	7612	timeout waiting on upstream
+445	1700005785	worker-a	INFO	415	7629	wrote batch
+446	1700005798	worker-b	INFO	422	7646	auth ok
+447	1700005811	cache-1	WARN	429	7663	rate limited
+448	1700005824	web-1	DEBUG	436	7680	accepted connection
+449	1700005837	web-2	ERROR	443	7697	query ok
+450	1700005850	api-1	INFO	450	7714	cache miss
+451	1700005863	api-2	INFO	457	7731	retry scheduled
+452	1700005876	worker-a	INFO	464	7748	timeout waiting on upstream
+453	1700005889	worker-b	WARN	471	7765	wrote batch
+454	1700005902	cache-1	DEBUG	478	7782	auth ok
+455	1700005915	web-1	ERROR	485	7799	rate limited
+456	1700005928	web-2	INFO	492	7816	accepted connection
+457	1700005941	api-1	INFO	499	7833	query ok
+458	1700005954	api-2	INFO	506	7850	cache miss
+459	1700005967	worker-a	WARN	513	7867	retry scheduled
+460	1700005980	worker-b	DEBUG	520	7884	timeout waiting on upstream
+461	1700005993	cache-1	ERROR	527	7901	wrote batch
+462	1700006006	web-1	INFO	534	7918	auth ok
+463	1700006019	web-2	INFO	541	7935	rate limited
+464	1700006032	api-1	INFO	548	7952	accepted connection
+465	1700006045	api-2	WARN	555	7969	query ok
+466	1700006058	worker-a	DEBUG	562	7986	cache miss
+467	1700006071	worker-b	ERROR	569	8003	retry scheduled
+468	1700006084	cache-1	INFO	576	8020	timeout waiting on upstream
+469	1700006097	web-1	INFO	583	8037	wrote batch
+470	1700006110	web-2	INFO	590	8054	auth ok
+471	1700006123	api-1	WARN	597	8071	rate limited
+472	1700006136	api-2	DEBUG	604	8088	accepted connection
+473	1700006149	worker-a	ERROR	611	8105	query ok
+474	1700006162	worker-b	INFO	618	8122	cache miss
+475	1700006175	cache-1	INFO	625	8139	retry scheduled
+476	1700006188	web-1	INFO	632	8156	timeout waiting on upstream
+477	1700006201	web-2	WARN	639	8173	wrote batch
+478	1700006214	api-1	DEBUG	646	8190	auth ok
+479	1700006227	api-2	ERROR	653	8207	rate limited
+480	1700006240	worker-a	INFO	660	8224	accepted connection
+481	1700006253	worker-b	INFO	667	8241	query ok
+482	1700006266	cache-1	INFO	674	8258	cache miss
+483	1700006279	web-1	WARN	681	8275	retry scheduled
+484	1700006292	web-2	DEBUG	688	8292	timeout waiting on upstream
+485	1700006305	api-1	ERROR	695	8309	wrote batch
+486	1700006318	api-2	INFO	702	8326	auth ok
+487	1700006331	worker-a	INFO	709	8343	rate limited
+488	1700006344	worker-b	INFO	716	8360	accepted connection
+489	1700006357	cache-1	WARN	723	8377	query ok
+490	1700006370	web-1	DEBUG	730	8394	cache miss
+491	1700006383	web-2	ERROR	737	8411	retry scheduled
+492	1700006396	api-1	INFO	744	8428	timeout waiting on upstream
+493	1700006409	api-2	INFO	751	8445	wrote batch
+494	1700006422	worker-a	INFO	758	8462	auth ok
+495	1700006435	worker-b	WARN	765	8479	rate limited
+496	1700006448	cache-1	DEBUG	772	8496	accepted connection
+497	1700006461	web-1	ERROR	779	8513	query ok
+498	1700006474	web-2	INFO	786	8530	cache miss
+499	1700006487	api-1	INFO	793	8547	retry scheduled
+500	1700006500	api-2	INFO	800	8564	timeout waiting on upstream
+501	1700006513	worker-a	WARN	807	8581	wrote batch
+502	1700006526	worker-b	DEBUG	814	8598	auth ok
+503	1700006539	cache-1	ERROR	821	8615	rate limited
+504	1700006552	web-1	INFO	828	8632	accepted connection
+505	1700006565	web-2	INFO	835	8649	query ok
+506	1700006578	api-1	INFO	842	8666	cache miss
+507	1700006591	api-2	WARN	849	8683	retry scheduled
+508	1700006604	worker-a	DEBUG	856	8700	timeout waiting on upstream
+509	1700006617	worker-b	ERROR	863	8717	wrote batch
+510	1700006630	cache-1	INFO	870	8734	auth ok
+511	1700006643	web-1	INFO	877	8751	rate limited
+512	1700006656	web-2	INFO	884	8768	accepted connection
+513	1700006669	api-1	WARN	891	8785	query ok
+514	1700006682	api-2	DEBUG	898	8802	cache miss
+515	1700006695	worker-a	ERROR	5	8819	retry scheduled
+516	1700006708	worker-b	INFO	12	8836	timeout waiting on upstream
+517	1700006721	cache-1	INFO	19	8853	wrote batch
+518	1700006734	web-1	INFO	26	8870	auth ok
+519	1700006747	web-2	WARN	33	8887	rate limited
+520	1700006760	api-1	DEBUG	40	8904	accepted connection
+521	1700006773	api-2	ERROR	47	8921	query ok
+522	1700006786	worker-a	INFO	54	8938	cache miss
+523	1700006799	worker-b	INFO	61	8955	retry scheduled
+524	1700006812	cache-1	INFO	68	8972	timeout waiting on upstream
+525	1700006825	web-1	WARN	75	8989	wrote batch
+526	1700006838	web-2	DEBUG	82	9006	auth ok
+527	1700006851	api-1	ERROR	89	9023	rate limited
+528	1700006864	api-2	INFO	96	9040	accepted connection
+529	1700006877	worker-a	INFO	103	9057	query ok
+530	1700006890	worker-b	INFO	110	9074	cache miss
+531	1700006903	cache-1	WARN	117	9091	retry scheduled
+532	1700006916	web-1	DEBUG	124	9108	timeout waiting on upstream
+533	1700006929	web-2	ERROR	131	9125	wrote batch
+534	1700006942	api-1	INFO	138	9142	auth ok
+535	1700006955	api-2	INFO	145	9159	rate limited
+536	1700006968	worker-a	INFO	152	9176	accepted connection
+537	1700006981	worker-b	WARN	159	9193	query ok
+538	1700006994	cache-1	DEBUG	166	9210	cache miss
+539	1700007007	web-1	ERROR	173	9227	retry scheduled
+540	1700007020	web-2	INFO	180	9244	timeout waiting on upstream
+541	1700007033	api-1	INFO	187	9261	wrote batch
+542	1700007046	api-2	INFO	194	9278	auth ok
+543	1700007059	worker-a	WARN	201	9295	rate limited
+544	1700007072	worker-b	DEBUG	208	9312	accepted connection
+545	1700007085	cache-1	ERROR	215	9329	query ok
+546	1700007098	web-1	INFO	222	9346	cache miss
+547	1700007111	web-2	INFO	229	9363	retry scheduled
+548	1700007124	api-1	INFO	236	9380	timeout waiting on upstream
+549	1700007137	api-2	WARN	243	9397	wrote batch
+550	1700007150	worker-a	DEBUG	250	9414	auth ok
+551	1700007163	worker-b	ERROR	257	9431	rate limited
+552	1700007176	cache-1	INFO	264	9448	accepted connection
+553	1700007189	web-1	INFO	271	9465	query ok
+554	1700007202	web-2	INFO	278	9482	cache miss
+555	1700007215	api-1	WARN	285	9499	retry scheduled
+556	1700007228	api-2	DEBUG	292	9516	timeout waiting on upstream
+557	1700007241	worker-a	ERROR	299	9533	wrote batch
+558	1700007254	worker-b	INFO	306	9550	auth ok
+559	1700007267	cache-1	INFO	313	9567	rate limited
+560	1700007280	web-1	INFO	320	9584	accepted connection
+561	1700007293	web-2	WARN	327	9601	query ok
+562	1700007306	api-1	DEBUG	334	9618	cache miss
+563	1700007319	api-2	ERROR	341	9635	retry scheduled
+564	1700007332	worker-a	INFO	348	9652	timeout waiting on upstream
+565	1700007345	worker-b	INFO	355	9669	wrote batch
+566	1700007358	cache-1	INFO	362	9686	auth ok
+567	1700007371	web-1	WARN	369	9703	rate limited
+568	1700007384	web-2	DEBUG	376	9720	accepted connection
+569	1700007397	api-1	ERROR	383	9737	query ok
+570	1700007410	api-2	INFO	390	9754	cache miss
+571	1700007423	worker-a	INFO	397	9771	retry scheduled
+572	1700007436	worker-b	INFO	404	9788	timeout waiting on upstream
+573	1700007449	cache-1	WARN	411	9805	wrote batch
+574	1700007462	web-1	DEBUG	418	9822	auth ok
+575	1700007475	web-2	ERROR	425	9839	rate limited
+576	1700007488	api-1	INFO	432	9856	accepted connection
+577	1700007501	api-2	INFO	439	9873	query ok
+578	1700007514	worker-a	INFO	446	9890	cache miss
+579	1700007527	worker-b	WARN	453	9907	retry scheduled
+580	1700007540	cache-1	DEBUG	460	9924	timeout waiting on upstream
+581	1700007553	web-1	ERROR	467	9941	wrote batch
+582	1700007566	web-2	INFO	474	9958	auth ok
+583	1700007579	api-1	INFO	481	9975	rate limited
+584	1700007592	api-2	INFO	488	9992	accepted connection
+585	1700007605	worker-a	WARN	495	10009	query ok
+586	1700007618	worker-b	DEBUG	502	10026	cache miss
+587	1700007631	cache-1	ERROR	509	10043	retry scheduled
+588	1700007644	web-1	INFO	516	10060	timeout waiting on upstream
+589	1700007657	web-2	INFO	523	10077	wrote batch
+590	1700007670	api-1	INFO	530	10094	auth ok
+591	1700007683	api-2	WARN	537	10111	rate limited
+592	1700007696	worker-a	DEBUG	544	10128	accepted connection
+593	1700007709	worker-b	ERROR	551	10145	query ok
+594	1700007722	cache-1	INFO	558	10162	cache miss
+595	1700007735	web-1	INFO	565	10179	retry scheduled
+596	1700007748	web-2	INFO	572	10196	timeout waiting on upstream
+597	1700007761	api-1	WARN	579	10213	wrote batch
+598	1700007774	api-2	DEBUG	586	10230	auth ok
+599	1700007787	worker-a	ERROR	593	10247	rate limited
+600	1700007800	worker-b	INFO	600	10264	accepted connection
+601	1700007813	cache-1	INFO	607	10281	query ok
+602	1700007826	web-1	INFO	614	10298	cache miss
+603	1700007839	web-2	WARN	621	10315	retry scheduled
+604	1700007852	api-1	DEBUG	628	10332	timeout waiting on upstream
+605	1700007865	api-2	ERROR	635	10349	wrote batch
+606	1700007878	worker-a	INFO	642	10366	auth ok
+607	1700007891	worker-b	INFO	649	10383	rate limited
+608	1700007904	cache-1	INFO	656	10400	accepted connection
+609	1700007917	web-1	WARN	663	10417	query ok
+610	1700007930	web-2	DEBUG	670	10434	cache miss
+611	1700007943	api-1	ERROR	677	10451	retry scheduled
+612	1700007956	api-2	INFO	684	10468	timeout waiting on upstream
+613	1700007969	worker-a	INFO	691	10485	wrote batch
+614	1700007982	worker-b	INFO	698	10502	auth ok
+615	1700007995	cache-1	WARN	705	10519	rate limited
+616	1700008008	web-1	DEBUG	712	10536	accepted connection
+617	1700008021	web-2	ERROR	719	10553	query ok
+618	1700008034	api-1	INFO	726	10570	cache miss
+619	1700008047	api-2	INFO	733	10587	retry scheduled
+620	1700008060	worker-a	INFO	740	10604	timeout waiting on upstream
+621	1700008073	worker-b	WARN	747	10621	wrote batch
+622	1700008086	cache-1	DEBUG	754	10638	auth ok
+623	1700008099	web-1	ERROR	761	10655	rate limited
+624	1700008112	web-2	INFO	768	10672	accepted connection
+625	1700008125	api-1	INFO	775	10689	query ok
+626	1700008138	api-2	INFO	782	10706	cache miss
+627	1700008151	worker-a	WARN	789	10723	retry scheduled
+628	1700008164	worker-b	DEBUG	796	10740	timeout waiting on upstream
+629	1700008177	cache-1	ERROR	803	10757	wrote batch
+630	1700008190	web-1	INFO	810	10774	auth ok
+631	1700008203	web-2	INFO	817	10791	rate limited
+632	1700008216	api-1	INFO	824	10808	accepted connection
+633	1700008229	api-2	WARN	831	10825	query ok
+634	1700008242	worker-a	DEBUG	838	10842	cache miss
+635	1700008255	worker-b	ERROR	845	10859	retry scheduled
+636	1700008268	cache-1	INFO	852	10876	timeout waiting on upstream
+637	1700008281	web-1	INFO	859	10893	wrote batch
+638	1700008294	web-2	INFO	866	10910	auth ok
+639	1700008307	api-1	WARN	873	10927	rate limited
+640	1700008320	api-2	DEBUG	880	10944	accepted connection
+641	1700008333	worker-a	ERROR	887	10961	query ok
+642	1700008346	worker-b	INFO	894	10978	cache miss
+643	1700008359	cache-1	INFO	1	10995	retry scheduled
+644	1700008372	web-1	INFO	8	11012	timeout waiting on upstream
+645	1700008385	web-2	WARN	15	11029	wrote batch
+646	1700008398	api-1	DEBUG	22	11046	auth ok
+647	1700008411	api-2	ERROR	29	11063	rate limited
+648	1700008424	worker-a	INFO	36	11080	accepted connection
+649	1700008437	worker-b	INFO	43	11097	query ok
+650	1700008450	cache-1	INFO	50	11114	cache miss
+651	1700008463	web-1	WARN	57	11131	retry scheduled
+652	1700008476	web-2	DEBUG	64	11148	timeout waiting on upstream
+653	1700008489	api-1	ERROR	71	11165	wrote batch
+654	1700008502	api-2	INFO	78	11182	auth ok
+655	1700008515	worker-a	INFO	85	11199	rate limited
+656	1700008528	worker-b	INFO	92	11216	accepted connection
+657	1700008541	cache-1	WARN	99	11233	query ok
+658	1700008554	web-1	DEBUG	106	11250	cache miss
+659	1700008567	web-2	ERROR	113	11267	retry scheduled
+660	1700008580	api-1	INFO	120	11284	timeout waiting on upstream
+661	1700008593	api-2	INFO	127	11301	wrote batch
+662	1700008606	worker-a	INFO	134	11318	auth ok
+663	1700008619	worker-b	WARN	141	11335	rate limited
+664	1700008632	cache-1	DEBUG	148	11352	accepted connection
+665	1700008645	web-1	ERROR	155	11369	query ok
+666	1700008658	web-2	INFO	162	11386	cache miss
+667	1700008671	api-1	INFO	169	11403	retry scheduled
+668	1700008684	api-2	INFO	176	11420	timeout waiting on upstream
+669	1700008697	worker-a	WARN	183	11437	wrote batch
+670	1700008710	worker-b	DEBUG	190	11454	auth ok
+671	1700008723	cache-1	ERROR	197	11471	rate limited
+672	1700008736	web-1	INFO	204	11488	accepted connection
+673	1700008749	web-2	INFO	211	11505	query ok
+674	1700008762	api-1	INFO	218	11522	cache miss
+675	1700008775	api-2	WARN	225	11539	retry scheduled
+676	1700008788	worker-a	DEBUG	232	11556	timeout waiting on upstream
+677	1700008801	worker-b	ERROR	239	11573	wrote batch
+678	1700008814	cache-1	INFO	246	11590	auth ok
+679	1700008827	web-1	INFO	253	11607	rate limited
+680	1700008840	web-2	INFO	260	11624	accepted connection
+681	1700008853	api-1	WARN	267	11641	query ok
+682	1700008866	api-2	DEBUG	274	11658	cache miss
+683	1700008879	worker-a	ERROR	281	11675	retry scheduled
+684	1700008892	worker-b	INFO	288	11692	timeout waiting on upstream
+685	1700008905	cache-1	INFO	295	11709	wrote batch
+686	1700008918	web-1	INFO	302	11726	auth ok
+687	1700008931	web-2	WARN	309	11743	rate limited
+688	1700008944	api-1	DEBUG	316	11760	accepted connection
+689	1700008957	api-2	ERROR	323	11777	query ok
+690	1700008970	worker-a	INFO	330	11794	cache miss
+691	1700008983	worker-b	INFO	337	11811	retry scheduled
+692	1700008996	cache-1	INFO	344	11828	timeout waiting on upstream
+693	1700009009	web-1	WARN	351	11845	wrote batch
+694	1700009022	web-2	DEBUG	358	11862	auth ok
+695	1700009035	api-1	ERROR	365	11879	rate limited
+696	1700009048	api-2	INFO	372	11896	accepted connection
+697	1700009061	worker-a	INFO	379	11913	query ok
+698	1700009074	worker-b	INFO	386	11930	cache miss
+699	1700009087	cache-1	WARN	393	11947	retry scheduled
+700	1700009100	web-1	DEBUG	400	11964	timeout waiting on upstream
+701	1700009113	web-2	ERROR	407	11981	wrote batch
+702	1700009126	api-1	INFO	414	11998	auth ok
+703	1700009139	api-2	INFO	421	12015	rate limited
+704	1700009152	worker-a	INFO	428	12032	accepted connection
+705	1700009165	worker-b	WARN	435	12049	query ok
+706	1700009178	cache-1	DEBUG	442	12066	cache miss
+707	1700009191	web-1	ERROR	449	12083	retry scheduled
+708	1700009204	web-2	INFO	456	12100	timeout waiting on upstream
+709	1700009217	api-1	INFO	463	12117	wrote batch
+710	1700009230	api-2	INFO	470	12134	auth ok
+711	1700009243	worker-a	WARN	477	12151	rate limited
+712	1700009256	worker-b	DEBUG	484	12168	accepted connection
+713	1700009269	cache-1	ERROR	491	12185	query ok
+714	1700009282	web-1	INFO	498	12202	cache miss
+715	1700009295	web-2	INFO	505	12219	retry scheduled
+716	1700009308	api-1	INFO	512	12236	timeout waiting on upstream
+717	1700009321	api-2	WARN	519	12253	wrote batch
+718	1700009334	worker-a	DEBUG	526	12270	auth ok
+719	1700009347	worker-b	ERROR	533	12287	rate limited
+720	1700009360	cache-1	INFO	540	12304	accepted connection
+721	1700009373	web-1	INFO	547	12321	query ok
+722	1700009386	web-2	INFO	554	12338	cache miss
+723	1700009399	api-1	WARN	561	12355	retry scheduled
+724	1700009412	api-2	DEBUG	568	12372	timeout waiting on upstream
+725	1700009425	worker-a	ERROR	575	12389	wrote batch
+726	1700009438	worker-b	INFO	582	12406	auth ok
+727	1700009451	cache-1	INFO	589	12423	rate limited
+728	1700009464	web-1	INFO	596	12440	accepted connection
+729	1700009477	web-2	WARN	603	12457	query ok
+730	1700009490	api-1	DEBUG	610	12474	cache miss
+731	1700009503	api-2	ERROR	617	12491	retry scheduled
+732	1700009516	worker-a	INFO	624	12508	timeout waiting on upstream
+733	1700009529	worker-b	INFO	631	12525	wrote batch
+734	1700009542	cache-1	INFO	638	12542	auth ok
+735	1700009555	web-1	WARN	645	12559	rate limited
+736	1700009568	web-2	DEBUG	652	12576	accepted connection
+737	1700009581	api-1	ERROR	659	12593	query ok
+738	1700009594	api-2	INFO	666	12610	cache miss
+739	1700009607	worker-a	INFO	673	12627	retry scheduled
+740	1700009620	worker-b	INFO	680	12644	timeout waiting on upstream
+741	1700009633	cache-1	WARN	687	12661	wrote batch
+742	1700009646	web-1	DEBUG	694	12678	auth ok
+743	1700009659	web-2	ERROR	701	12695	rate limited
+744	1700009672	api-1	INFO	708	12712	accepted connection
+745	1700009685	api-2	INFO	715	12729	query ok
+746	1700009698	worker-a	INFO	722	12746	cache miss
+747	1700009711	worker-b	WARN	729	12763	retry scheduled
+748	1700009724	cache-1	DEBUG	736	12780	timeout waiting on upstream
+749	1700009737	web-1	ERROR	743	12797	wrote batch
+750	1700009750	web-2	INFO	750	12814	auth ok
+751	1700009763	api-1	INFO	757	12831	rate limited
+752	1700009776	api-2	INFO	764	12848	accepted connection
+753	1700009789	worker-a	WARN	771	12865	query ok
+754	1700009802	worker-b	DEBUG	778	12882	cache miss
+755	1700009815	cache-1	ERROR	785	12899	retry scheduled
+756	1700009828	web-1	INFO	792	12916	timeout waiting on upstream
+757	1700009841	web-2	INFO	799	12933	wrote batch
+758	1700009854	api-1	INFO	806	12950	auth ok
+759	1700009867	api-2	WARN	813	12967	rate limited
+760	1700009880	worker-a	DEBUG	820	12984	accepted connection
+761	1700009893	worker-b	ERROR	827	13001	query ok
+762	1700009906	cache-1	INFO	834	13018	cache miss
+763	1700009919	web-1	INFO	841	13035	retry scheduled
+764	1700009932	web-2	INFO	848	13052	timeout waiting on upstream
+765	1700009945	api-1	WARN	855	13069	wrote batch
+766	1700009958	api-2	DEBUG	862	13086	auth ok
+767	1700009971	worker-a	ERROR	869	13103	rate limited
+768	1700009984	worker-b	INFO	876	13120	accepted connection
+769	1700009997	cache-1	INFO	883	13137	query ok
+770	1700010010	web-1	INFO	890	13154	cache miss
+771	1700010023	web-2	WARN	897	13171	retry scheduled
+772	1700010036	api-1	DEBUG	4	13188	timeout waiting on upstream
+773	1700010049	api-2	ERROR	11	13205	wrote batch
+774	1700010062	worker-a	INFO	18	13222	auth ok
+775	1700010075	worker-b	INFO	25	13239	rate limited
+776	1700010088	cache-1	INFO	32	13256	accepted connection
+777	1700010101	web-1	WARN	39	13273	query ok
+778	1700010114	web-2	DEBUG	46	13290	cache miss
+779	1700010127	api-1	ERROR	53	13307	retry scheduled
+780	1700010140	api-2	INFO	60	13324	timeout waiting on upstream
+781	1700010153	worker-a	INFO	67	13341	wrote batch
+782	1700010166	worker-b	INFO	74	13358	auth ok
+783	1700010179	cache-1	WARN	81	13375	rate limited
+784	1700010192	web-1	DEBUG	88	13392	accepted connection
+785	1700010205	web-2	ERROR	95	13409	query ok
+786	1700010218	api-1	INFO	102	13426	cache miss
+787	1700010231	api-2	INFO	109	13443	retry scheduled
+788	1700010244	worker-a	INFO	116	13460	timeout waiting on upstream
+789	1700010257	worker-b	WARN	123	13477	wrote batch
+790	1700010270	cache-1	DEBUG	130	13494	auth ok
+791	1700010283	web-1	ERROR	137	13511	rate limited
+792	1700010296	web-2	INFO	144	13528	accepted connection
+793	1700010309	api-1	INFO	151	13545	query ok
+794	1700010322	api-2	INFO	158	13562	cache miss
+795	1700010335	worker-a	WARN	165	13579	retry scheduled
+796	1700010348	worker-b	DEBUG	172	13596	timeout waiting on upstream
+797	1700010361	cache-1	ERROR	179	13613	wrote batch
+798	1700010374	web-1	INFO	186	13630	auth ok
+799	1700010387	web-2	INFO	193	13647	rate limited
+800	1700010400	api-1	INFO	200	13664	accepted connection
+801	1700010413	api-2	WARN	207	13681	query ok
+802	1700010426	worker-a	DEBUG	214	13698	cache miss
+803	1700010439	worker-b	ERROR	221	13715	retry scheduled
+804	1700010452	cache-1	INFO	228	13732	timeout waiting on upstream
+805	1700010465	web-1	INFO	235	13749	wrote batch
+806	1700010478	web-2	INFO	242	13766	auth ok
+807	1700010491	api-1	WARN	249	13783	rate limited
+808	1700010504	api-2	DEBUG	256	13800	accepted connection
+809	1700010517	worker-a	ERROR	263	13817	query ok
+810	1700010530	worker-b	INFO	270	13834	cache miss
+811	1700010543	cache-1	INFO	277	13851	retry scheduled
+812	1700010556	web-1	INFO	284	13868	timeout waiting on upstream
+813	1700010569	web-2	WARN	291	13885	wrote batch
+814	1700010582	api-1	DEBUG	298	13902	auth ok
+815	1700010595	api-2	ERROR	305	13919	rate limited
+816	1700010608	worker-a	INFO	312	13936	accepted connection
+817	1700010621	worker-b	INFO	319	13953	query ok
+818	1700010634	cache-1	INFO	326	13970	cache miss
+819	1700010647	web-1	WARN	333	13987	retry scheduled
+820	1700010660	web-2	DEBUG	340	14004	timeout waiting on upstream
+821	1700010673	api-1	ERROR	347	14021	wrote batch
+822	1700010686	api-2	INFO	354	14038	auth ok
+823	1700010699	worker-a	INFO	361	14055	rate limited
+824	1700010712	worker-b	INFO	368	14072	accepted connection
+825	1700010725	cache-1	WARN	375	14089	query ok
+826	1700010738	web-1	DEBUG	382	14106	cache miss
+827	1700010751	web-2	ERROR	389	14123	retry scheduled
+828	1700010764	api-1	INFO	396	14140	timeout waiting on upstream
+829	1700010777	api-2	INFO	403	14157	wrote batch
+830	1700010790	worker-a	INFO	410	14174	auth ok
+831	1700010803	worker-b	WARN	417	14191	rate limited
+832	1700010816	cache-1	DEBUG	424	14208	accepted connection
+833	1700010829	web-1	ERROR	431	14225	query ok
+834	1700010842	web-2	INFO	438	14242	cache miss
+835	1700010855	api-1	INFO	445	14259	retry scheduled
+836	1700010868	api-2	INFO	452	14276	timeout waiting on upstream
+837	1700010881	worker-a	WARN	459	14293	wrote batch
+838	1700010894	worker-b	DEBUG	466	14310	auth ok
+839	1700010907	cache-1	ERROR	473	14327	rate limited
+840	1700010920	web-1	INFO	480	14344	accepted connection
+841	1700010933	web-2	INFO	487	14361	query ok
+842	1700010946	api-1	INFO	494	14378	cache miss
+843	1700010959	api-2	WARN	501	14395	retry scheduled
+844	1700010972	worker-a	DEBUG	508	14412	timeout waiting on upstream
+845	1700010985	worker-b	ERROR	515	14429	wrote batch
+846	1700010998	cache-1	INFO	522	14446	auth ok
+847	1700011011	web-1	INFO	529	14463	rate limited
+848	1700011024	web-2	INFO	536	14480	accepted connection
+849	1700011037	api-1	WARN	543	14497	query ok
+850	1700011050	api-2	DEBUG	550	14514	cache miss
+851	1700011063	worker-a	ERROR	557	14531	retry scheduled
+852	1700011076	worker-b	INFO	564	14548	timeout waiting on upstream
+853	1700011089	cache-1	INFO	571	14565	wrote batch
+854	1700011102	web-1	INFO	578	14582	auth ok
+855	1700011115	web-2	WARN	585	14599	rate limited
+856	1700011128	api-1	DEBUG	592	14616	accepted connection
+857	1700011141	api-2	ERROR	599	14633	query ok
+858	1700011154	worker-a	INFO	606	14650	cache miss
+859	1700011167	worker-b	INFO	613	14667	retry scheduled
+860	1700011180	cache-1	INFO	620	14684	timeout waiting on upstream
+861	1700011193	web-1	WARN	627	14701	wrote batch
+862	1700011206	web-2	DEBUG	634	14718	auth ok
+863	1700011219	api-1	ERROR	641	14735	rate limited
+864	1700011232	api-2	INFO	648	14752	accepted connection
+865	1700011245	worker-a	INFO	655	14769	query ok
+866	1700011258	worker-b	INFO	662	14786	cache miss
+867	1700011271	cache-1	WARN	669	14803	retry scheduled
+868	1700011284	web-1	DEBUG	676	14820	timeout waiting on upstream
+869	1700011297	web-2	ERROR	683	14837	wrote batch
+870	1700011310	api-1	INFO	690	14854	auth ok
+871	1700011323	api-2	INFO	697	14871	rate limited
+872	1700011336	worker-a	INFO	704	14888	accepted connection
+873	1700011349	worker-b	WARN	711	14905	query ok
+874	1700011362	cache-1	DEBUG	718	14922	cache miss
+875	1700011375	web-1	ERROR	725	14939	retry scheduled
+876	1700011388	web-2	INFO	732	14956	timeout waiting on upstream
+877	1700011401	api-1	INFO	739	14973	wrote batch
+878	1700011414	api-2	INFO	746	14990	auth ok
+879	1700011427	worker-a	WARN	753	15007	rate limited
+880	1700011440	worker-b	DEBUG	760	15024	accepted connection
+881	1700011453	cache-1	ERROR	767	15041	query ok
+882	1700011466	web-1	INFO	774	15058	cache miss
+883	1700011479	web-2	INFO	781	15075	retry scheduled
+884	1700011492	api-1	INFO	788	15092	timeout waiting on upstream
+885	1700011505	api-2	WARN	795	15109	wrote batch
+886	1700011518	worker-a	DEBUG	802	15126	auth ok
+887	1700011531	worker-b	ERROR	809	15143	rate limited
+888	1700011544	cache-1	INFO	816	15160	accepted connection
+889	1700011557	web-1	INFO	823	15177	query ok
+890	1700011570	web-2	INFO	830	15194	cache miss
+891	1700011583	api-1	WARN	837	15211	retry scheduled
+892	1700011596	api-2	DEBUG	844	15228	timeout waiting on upstream
+893	1700011609	worker-a	ERROR	851	15245	wrote batch
+894	1700011622	worker-b	INFO	858	15262	auth ok
+895	1700011635	cache-1	INFO	865	15279	rate limited
+896	1700011648	web-1	INFO	872	15296	accepted connection
+897	1700011661	web-2	WARN	879	15313	query ok
+898	1700011674	api-1	DEBUG	886	15330	cache miss
+899	1700011687	api-2	ERROR	893	15347	retry scheduled
+900	1700011700	worker-a	INFO	0	15364	timeout waiting on upstream
+901	1700011713	worker-b	INFO	7	15381	wrote batch
+902	1700011726	cache-1	INFO	14	15398	auth ok
+903	1700011739	web-1	WARN	21	15415	rate limited
+904	1700011752	web-2	DEBUG	28	15432	accepted connection
+905	1700011765	api-1	ERROR	35	15449	query ok
+906	1700011778	api-2	INFO	42	15466	cache miss
+907	1700011791	worker-a	INFO	49	15483	retry scheduled
+908	1700011804	worker-b	INFO	56	15500	timeout waiting on upstream
+909	1700011817	cache-1	WARN	63	15517	wrote batch
+910	1700011830	web-1	DEBUG	70	15534	auth ok
+911	1700011843	web-2	ERROR	77	15551	rate limited
+912	1700011856	api-1	INFO	84	15568	accepted connection
+913	1700011869	api-2	INFO	91	15585	query ok
+914	1700011882	worker-a	INFO	98	15602	cache miss
+915	1700011895	worker-b	WARN	105	15619	retry scheduled
+916	1700011908	cache-1	DEBUG	112	15636	timeout waiting on upstream
+917	1700011921	web-1	ERROR	119	15653	wrote batch
+918	1700011934	web-2	INFO	126	15670	auth ok
+919	1700011947	api-1	INFO	133	15687	rate limited
+920	1700011960	api-2	INFO	140	15704	accepted connection
+921	1700011973	worker-a	WARN	147	15721	query ok
+922	1700011986	worker-b	DEBUG	154	15738	cache miss
+923	1700011999	cache-1	ERROR	161	15755	retry scheduled
+924	1700012012	web-1	INFO	168	15772	timeout waiting on upstream
+925	1700012025	web-2	INFO	175	15789	wrote batch
+926	1700012038	api-1	INFO	182	15806	auth ok
+927	1700012051	api-2	WARN	189	15823	rate limited
+928	1700012064	worker-a	DEBUG	196	15840	accepted connection
+929	1700012077	worker-b	ERROR	203	15857	query ok
+930	1700012090	cache-1	INFO	210	15874	cache miss
+931	1700012103	web-1	INFO	217	15891	retry scheduled
+932	1700012116	web-2	INFO	224	15908	timeout waiting on upstream
+933	1700012129	api-1	WARN	231	15925	wrote batch
+934	1700012142	api-2	DEBUG	238	15942	auth ok
+935	1700012155	worker-a	ERROR	245	15959	rate limited
+936	1700012168	worker-b	INFO	252	15976	accepted connection
+937	1700012181	cache-1	INFO	259	15993	query ok
+938	1700012194	web-1	INFO	266	16010	cache miss
+939	1700012207	web-2	WARN	273	16027	retry scheduled
+940	1700012220	api-1	DEBUG	280	16044	timeout waiting on upstream
+941	1700012233	api-2	ERROR	287	16061	wrote batch
+942	1700012246	worker-a	INFO	294	16078	auth ok
+943	1700012259	worker-b	INFO	301	16095	rate limited
+944	1700012272	cache-1	INFO	308	16112	accepted connection
+945	1700012285	web-1	WARN	315	16129	query ok
+946	1700012298	web-2	DEBUG	322	16146	cache miss
+947	1700012311	api-1	ERROR	329	16163	retry scheduled
+948	1700012324	api-2	INFO	336	16180	timeout waiting on upstream
+949	1700012337	worker-a	INFO	343	16197	wrote batch
+950	1700012350	worker-b	INFO	350	16214	auth ok
+951	1700012363	cache-1	WARN	357	16231	rate limited
+952	1700012376	web-1	DEBUG	364	16248	accepted connection
+953	1700012389	web-2	ERROR	371	16265	query ok
+954	1700012402	api-1	INFO	378	16282	cache miss
+955	1700012415	api-2	INFO	385	16299	retry scheduled
+956	1700012428	worker-a	INFO	392	16316	timeout waiting on upstream
+957	1700012441	worker-b	WARN	399	16333	wrote batch
+958	1700012454	cache-1	DEBUG	406	16350	auth ok
+959	1700012467	web-1	ERROR	413	16367	rate limited
+960	1700012480	web-2	INFO	420	16384	accepted connection
+961	1700012493	api-1	INFO	427	16401	query ok
+962	1700012506	api-2	INFO	434	16418	cache miss
+963	1700012519	worker-a	WARN	441	16435	retry scheduled
+964	1700012532	worker-b	DEBUG	448	16452	timeout waiting on upstream
+965	1700012545	cache-1	ERROR	455	16469	wrote batch
+966	1700012558	web-1	INFO	462	16486	auth ok
+967	1700012571	web-2	INFO	469	16503	rate limited
+968	1700012584	api-1	INFO	476	16520	accepted connection
+969	1700012597	api-2	WARN	483	16537	query ok
+970	1700012610	worker-a	DEBUG	490	16554	cache miss
+971	1700012623	worker-b	ERROR	497	16571	retry scheduled
+972	1700012636	cache-1	INFO	504	16588	timeout waiting on upstream
+973	1700012649	web-1	INFO	511	16605	wrote batch
+974	1700012662	web-2	INFO	518	16622	auth ok
+975	1700012675	api-1	WARN	525	16639	rate limited
+976	1700012688	api-2	DEBUG	532	16656	accepted connection
+977	1700012701	worker-a	ERROR	539	16673	query ok
+978	1700012714	worker-b	INFO	546	16690	cache miss
+979	1700012727	cache-1	INFO	553	16707	retry scheduled
+980	1700012740	web-1	INFO	560	16724	timeout waiting on upstream
+981	1700012753	web-2	WARN	567	16741	wrote batch
+982	1700012766	api-1	DEBUG	574	16758	auth ok
+983	1700012779	api-2	ERROR	581	16775	rate limited
+984	1700012792	worker-a	INFO	588	16792	accepted connection
+985	1700012805	worker-b	INFO	595	16809	query ok
+986	1700012818	cache-1	INFO	602	16826	cache miss
+987	1700012831	web-1	WARN	609	16843	retry scheduled
+988	1700012844	web-2	DEBUG	616	16860	timeout waiting on upstream
+989	1700012857	api-1	ERROR	623	16877	wrote batch
+990	1700012870	api-2	INFO	630	16894	auth ok
+991	1700012883	worker-a	INFO	637	16911	rate limited
+992	1700012896	worker-b	INFO	644	16928	accepted connection
+993	1700012909	cache-1	WARN	651	16945	query ok
+994	1700012922	web-1	DEBUG	658	16962	cache miss
+995	1700012935	web-2	ERROR	665	16979	retry scheduled
+996	1700012948	api-1	INFO	672	16996	timeout waiting on upstream
+997	1700012961	api-2	INFO	679	17013	wrote batch
+998	1700012974	worker-a	INFO	686	17030	auth ok
+999	1700012987	worker-b	WARN	693	17047	rate limited
+1000	1700013000	cache-1	DEBUG	700	17064	accepted connection
+1001	1700013013	web-1	ERROR	707	17081	query ok
+1002	1700013026	web-2	INFO	714	17098	cache miss
+1003	1700013039	api-1	INFO	721	17115	retry scheduled
+1004	1700013052	api-2	INFO	728	17132	timeout waiting on upstream
+1005	1700013065	worker-a	WARN	735	17149	wrote batch
+1006	1700013078	worker-b	DEBUG	742	17166	auth ok
+1007	1700013091	cache-1	ERROR	749	17183	rate limited
+1008	1700013104	web-1	INFO	756	17200	accepted connection
+1009	1700013117	web-2	INFO	763	17217	query ok
+1010	1700013130	api-1	INFO	770	17234	cache miss
+1011	1700013143	api-2	WARN	777	17251	retry scheduled
+1012	1700013156	worker-a	DEBUG	784	17268	timeout waiting on upstream
+1013	1700013169	worker-b	ERROR	791	17285	wrote batch
+1014	1700013182	cache-1	INFO	798	17302	auth ok
+1015	1700013195	web-1	INFO	805	17319	rate limited
+1016	1700013208	web-2	INFO	812	17336	accepted connection
+1017	1700013221	api-1	WARN	819	17353	query ok
+1018	1700013234	api-2	DEBUG	826	17370	cache miss
+1019	1700013247	worker-a	ERROR	833	17387	retry scheduled
+1020	1700013260	worker-b	INFO	840	17404	timeout waiting on upstream
+1021	1700013273	cache-1	INFO	847	17421	wrote batch
+1022	1700013286	web-1	INFO	854	17438	auth ok
+1023	1700013299	web-2	WARN	861	17455	rate limited
+1024	1700013312	api-1	DEBUG	868	17472	accepted connection
+1025	1700013325	api-2	ERROR	875	17489	query ok
+1026	1700013338	worker-a	INFO	882	17506	cache miss
+1027	1700013351	worker-b	INFO	889	17523	retry scheduled
+1028	1700013364	cache-1	INFO	896	17540	timeout waiting on upstream
+1029	1700013377	web-1	WARN	3	17557	wrote batch
+1030	1700013390	web-2	DEBUG	10	17574	auth ok
+1031	1700013403	api-1	ERROR	17	17591	rate limited
+1032	1700013416	api-2	INFO	24	17608	accepted connection
+1033	1700013429	worker-a	INFO	31	17625	query ok
+1034	1700013442	worker-b	INFO	38	17642	cache miss
+1035	1700013455	cache-1	WARN	45	17659	retry scheduled
+1036	1700013468	web-1	DEBUG	52	17676	timeout waiting on upstream
+1037	1700013481	web-2	ERROR	59	17693	wrote batch
+1038	1700013494	api-1	INFO	66	17710	auth ok
+1039	1700013507	api-2	INFO	73	17727	rate limited
+1040	1700013520	worker-a	INFO	80	17744	accepted connection
+1041	1700013533	worker-b	WARN	87	17761	query ok
+1042	1700013546	cache-1	DEBUG	94	17778	cache miss
+1043	1700013559	web-1	ERROR	101	17795	retry scheduled
+1044	1700013572	web-2	INFO	108	17812	timeout waiting on upstream
+1045	1700013585	api-1	INFO	115	17829	wrote batch
+1046	1700013598	api-2	INFO	122	17846	auth ok
+1047	1700013611	worker-a	WARN	129	17863	rate limited
+1048	1700013624	worker-b	DEBUG	136	17880	accepted connection
+1049	1700013637	cache-1	ERROR	143	17897	query ok
+1050	1700013650	web-1	INFO	150	17914	cache miss
+1051	1700013663	web-2	INFO	157	17931	retry scheduled
+1052	1700013676	api-1	INFO	164	17948	timeout waiting on upstream
+1053	1700013689	api-2	WARN	171	17965	wrote batch
+1054	1700013702	worker-a	DEBUG	178	17982	auth ok
+1055	1700013715	worker-b	ERROR	185	17999	rate limited
+1056	1700013728	cache-1	INFO	192	18016	accepted connection
+1057	1700013741	web-1	INFO	199	18033	query ok
+1058	1700013754	web-2	INFO	206	18050	cache miss
+1059	1700013767	api-1	WARN	213	18067	retry scheduled
+1060	1700013780	api-2	DEBUG	220	18084	timeout waiting on upstream
+1061	1700013793	worker-a	ERROR	227	18101	wrote batch
+1062	1700013806	worker-b	INFO	234	18118	auth ok
+1063	1700013819	cache-1	INFO	241	18135	rate limited
+1064	1700013832	web-1	INFO	248	18152	accepted connection
+1065	1700013845	web-2	WARN	255	18169	query ok
+1066	1700013858	api-1	DEBUG	262	18186	cache miss
+1067	1700013871	api-2	ERROR	269	18203	retry scheduled
+1068	1700013884	worker-a	INFO	276	18220	timeout waiting on upstream
+1069	1700013897	worker-b	INFO	283	18237	wrote batch
+1070	1700013910	cache-1	INFO	290	18254	auth ok
+1071	1700013923	web-1	WARN	297	18271	rate limited
+1072	1700013936	web-2	DEBUG	304	18288	accepted connection
+1073	1700013949	api-1	ERROR	311	18305	query ok
+1074	1700013962	api-2	INFO	318	18322	cache miss
+1075	1700013975	worker-a	INFO	325	18339	retry scheduled
+1076	1700013988	worker-b	INFO	332	18356	timeout waiting on upstream
+1077	1700014001	cache-1	WARN	339	18373	wrote batch
+1078	1700014014	web-1	DEBUG	346	18390	auth ok
+1079	1700014027	web-2	ERROR	353	18407	rate limited
+1080	1700014040	api-1	INFO	360	18424	accepted connection
+1081	1700014053	api-2	INFO	367	18441	query ok
+1082	1700014066	worker-a	INFO	374	18458	cache miss
+1083	1700014079	worker-b	WARN	381	18475	retry scheduled
+1084	1700014092	cache-1	DEBUG	388	18492	timeout waiting on upstream
+1085	1700014105	web-1	ERROR	395	18509	wrote batch
+1086	1700014118	web-2	INFO	402	18526	auth ok
+1087	1700014131	api-1	INFO	409	18543	rate limited
+1088	1700014144	api-2	INFO	416	18560	accepted connection
+1089	1700014157	worker-a	WARN	423	18577	query ok
+1090	1700014170	worker-b	DEBUG	430	18594	cache miss
+1091	1700014183	cache-1	ERROR	437	18611	retry scheduled
+1092	1700014196	web-1	INFO	444	18628	timeout waiting on upstream
+1093	1700014209	web-2	INFO	451	18645	wrote batch
+1094	1700014222	api-1	INFO	458	18662	auth ok
+1095	1700014235	api-2	WARN	465	18679	rate limited
+1096	1700014248	worker-a	DEBUG	472	18696	accepted connection
+1097	1700014261	worker-b	ERROR	479	18713	query ok
+1098	1700014274	cache-1	INFO	486	18730	cache miss
+1099	1700014287	web-1	INFO	493	18747	retry scheduled
+1100	1700014300	web-2	INFO	500	18764	timeout waiting on upstream
+1101	1700014313	api-1	WARN	507	18781	wrote batch
+1102	1700014326	api-2	DEBUG	514	18798	auth ok
+1103	1700014339	worker-a	ERROR	521	18815	rate limited
+1104	1700014352	worker-b	INFO	528	18832	accepted connection
+1105	1700014365	cache-1	INFO	535	18849	query ok
+1106	1700014378	web-1	INFO	542	18866	cache miss
+1107	1700014391	web-2	WARN	549	18883	retry scheduled
+1108	1700014404	api-1	DEBUG	556	18900	timeout waiting on upstream
+1109	1700014417	api-2	ERROR	563	18917	wrote batch
+1110	1700014430	worker-a	INFO	570	18934	auth ok
+1111	1700014443	worker-b	INFO	577	18951	rate limited
+1112	1700014456	cache-1	INFO	584	18968	accepted connection
+1113	1700014469	web-1	WARN	591	18985	query ok
+1114	1700014482	web-2	DEBUG	598	19002	cache miss
+1115	1700014495	api-1	ERROR	605	19019	retry scheduled
+1116	1700014508	api-2	INFO	612	19036	timeout waiting on upstream
+1117	1700014521	worker-a	INFO	619	19053	wrote batch
+1118	1700014534	worker-b	INFO	626	19070	auth ok
+1119	1700014547	cache-1	WARN	633	19087	rate limited
+1120	1700014560	web-1	DEBUG	640	19104	accepted connection
+1121	1700014573	web-2	ERROR	647	19121	query ok
+1122	1700014586	api-1	INFO	654	19138	cache miss
+1123	1700014599	api-2	INFO	661	19155	retry scheduled
+1124	1700014612	worker-a	INFO	668	19172	timeout waiting on upstream
+1125	1700014625	worker-b	WARN	675	19189	wrote batch
+1126	1700014638	cache-1	DEBUG	682	19206	auth ok
+1127	1700014651	web-1	ERROR	689	19223	rate limited
+1128	1700014664	web-2	INFO	696	19240	accepted connection
+1129	1700014677	api-1	INFO	703	19257	query ok
+1130	1700014690	api-2	INFO	710	19274	cache miss
+1131	1700014703	worker-a	WARN	717	19291	retry scheduled
+1132	1700014716	worker-b	DEBUG	724	19308	timeout waiting on upstream
+1133	1700014729	cache-1	ERROR	731	19325	wrote batch
+1134	1700014742	web-1	INFO	738	19342	auth ok
+1135	1700014755	web-2	INFO	745	19359	rate limited
+1136	1700014768	api-1	INFO	752	19376	accepted connection
+1137	1700014781	api-2	WARN	759	19393	query ok
+1138	1700014794	worker-a	DEBUG	766	19410	cache miss
+1139	1700014807	worker-b	ERROR	773	19427	retry scheduled
+1140	1700014820	cache-1	INFO	780	19444	timeout waiting on upstream
+1141	1700014833	web-1	INFO	787	19461	wrote batch
+1142	1700014846	web-2	INFO	794	19478	auth ok
+1143	1700014859	api-1	WARN	801	19495	rate limited
+1144	1700014872	api-2	DEBUG	808	19512	accepted connection
+1145	1700014885	worker-a	ERROR	815	19529	query ok
+1146	1700014898	worker-b	INFO	822	19546	cache miss
+1147	1700014911	cache-1	INFO	829	19563	retry scheduled
+1148	1700014924	web-1	INFO	836	19580	timeout waiting on upstream
+1149	1700014937	web-2	WARN	843	19597	wrote batch
+1150	1700014950	api-1	DEBUG	850	19614	auth ok
+1151	1700014963	api-2	ERROR	857	19631	rate limited
+1152	1700014976	worker-a	INFO	864	19648	accepted connection
+1153	1700014989	worker-b	INFO	871	19665	query ok
+1154	1700015002	cache-1	INFO	878	19682	cache miss
+1155	1700015015	web-1	WARN	885	19699	retry scheduled
+1156	1700015028	web-2	DEBUG	892	19716	timeout waiting on upstream
+1157	1700015041	api-1	ERROR	899	19733	wrote batch
+1158	1700015054	api-2	INFO	6	19750	auth ok
+1159	1700015067	worker-a	INFO	13	19767	rate limited
+1160	1700015080	worker-b	INFO	20	19784	accepted connection
+1161	1700015093	cache-1	WARN	27	19801	query ok
+1162	1700015106	web-1	DEBUG	34	19818	cache miss
+1163	1700015119	web-2	ERROR	41	19835	retry scheduled
+1164	1700015132	api-1	INFO	48	19852	timeout waiting on upstream
+1165	1700015145	api-2	INFO	55	19869	wrote batch
+1166	1700015158	worker-a	INFO	62	19886	auth ok
+1167	1700015171	worker-b	WARN	69	19903	rate limited
+1168	1700015184	cache-1	DEBUG	76	19920	accepted connection
+1169	1700015197	web-1	ERROR	83	19937	query ok
+1170	1700015210	web-2	INFO	90	19954	cache miss
+1171	1700015223	api-1	INFO	97	19971	retry scheduled
+1172	1700015236	api-2	INFO	104	19988	timeout waiting on upstream
+1173	1700015249	worker-a	WARN	111	20005	wrote batch
+1174	1700015262	worker-b	DEBUG	118	20022	auth ok
+1175	1700015275	cache-1	ERROR	125	20039	rate limited
+1176	1700015288	web-1	INFO	132	20056	accepted connection
+1177	1700015301	web-2	INFO	139	20073	query ok
+1178	1700015314	api-1	INFO	146	20090	cache miss
+1179	1700015327	api-2	WARN	153	20107	retry scheduled
+1180	1700015340	worker-a	DEBUG	160	20124	timeout waiting on upstream
+1181	1700015353	worker-b	ERROR	167	20141	wrote batch
+1182	1700015366	cache-1	INFO	174	20158	auth ok
+1183	1700015379	web-1	INFO	181	20175	rate limited
+1184	1700015392	web-2	INFO	188	20192	accepted connection
+1185	1700015405	api-1	WARN	195	20209	query ok
+1186	1700015418	api-2	DEBUG	202	20226	cache miss
+1187	1700015431	worker-a	ERROR	209	20243	retry scheduled
+1188	1700015444	worker-b	INFO	216	20260	timeout waiting on upstream
+1189	1700015457	cache-1	INFO	223	20277	wrote batch
+1190	1700015470	web-1	INFO	230	20294	auth ok
+1191	1700015483	web-2	WARN	237	20311	rate limited
+1192	1700015496	api-1	DEBUG	244	20328	accepted connection
+1193	1700015509	api-2	ERROR	251	20345	query ok
+1194	1700015522	worker-a	INFO	258	20362	cache miss
+1195	1700015535	worker-b	INFO	265	20379	retry scheduled
+1196	1700015548	cache-1	INFO	272	20396	timeout waiting on upstream
+1197	1700015561	web-1	WARN	279	20413	wrote batch
+1198	1700015574	web-2	DEBUG	286	20430	auth ok
+1199	1700015587	api-1	ERROR	293	20447	rate limited
+1200	1700015600	api-2	INFO	300	20464	accepted connection
+1201	1700015613	worker-a	INFO	307	20481	query ok
+1202	1700015626	worker-b	INFO	314	20498	cache miss
+1203	1700015639	cache-1	WARN	321	20515	retry scheduled
+1204	1700015652	web-1	DEBUG	328	20532	timeout waiting on upstream
+1205	1700015665	web-2	ERROR	335	20549	wrote batch
+1206	1700015678	api-1	INFO	342	20566	auth ok
+1207	1700015691	api-2	INFO	349	20583	rate limited
+1208	1700015704	worker-a	INFO	356	20600	accepted connection
+1209	1700015717	worker-b	WARN	363	20617	query ok
+1210	1700015730	cache-1	DEBUG	370	20634	cache miss
+1211	1700015743	web-1	ERROR	377	20651	retry scheduled
+1212	1700015756	web-2	INFO	384	20668	timeout waiting on upstream
+1213	1700015769	api-1	INFO	391	20685	wrote batch
+1214	1700015782	api-2	INFO	398	20702	auth ok
+1215	1700015795	worker-a	WARN	405	20719	rate limited
+1216	1700015808	worker-b	DEBUG	412	20736	accepted connection
+1217	1700015821	cache-1	ERROR	419	20753	query ok
+1218	1700015834	web-1	INFO	426	20770	cache miss
+1219	1700015847	web-2	INFO	433	20787	retry scheduled
+1220	1700015860	api-1	INFO	440	20804	timeout waiting on upstream
+1221	1700015873	api-2	WARN	447	20821	wrote batch
+1222	1700015886	worker-a	DEBUG	454	20838	auth ok
+1223	1700015899	worker-b	ERROR	461	20855	rate limited
+1224	1700015912	cache-1	INFO	468	20872	accepted connection
+1225	1700015925	web-1	INFO	475	20889	query ok
+1226	1700015938	web-2	INFO	482	20906	cache miss
+1227	1700015951	api-1	WARN	489	20923	retry scheduled
+1228	1700015964	api-2	DEBUG	496	20940	timeout waiting on upstream
+1229	1700015977	worker-a	ERROR	503	20957	wrote batch
+1230	1700015990	worker-b	INFO	510	20974	auth ok
+1231	1700016003	cache-1	INFO	517	20991	rate limited
+1232	1700016016	web-1	INFO	524	21008	accepted connection
+1233	1700016029	web-2	WARN	531	21025	query ok
+1234	1700016042	api-1	DEBUG	538	21042	cache miss
+1235	1700016055	api-2	ERROR	545	21059	retry scheduled
+1236	1700016068	worker-a	INFO	552	21076	timeout waiting on upstream
+1237	1700016081	worker-b	INFO	559	21093	wrote batch
+1238	1700016094	cache-1	INFO	566	21110	auth ok
+1239	1700016107	web-1	WARN	573	21127	rate limited
+1240	1700016120	web-2	DEBUG	580	21144	accepted connection
+1241	1700016133	api-1	ERROR	587	21161	query ok
+1242	1700016146	api-2	INFO	594	21178	cache miss
+1243	1700016159	worker-a	INFO	601	21195	retry scheduled
+1244	1700016172	worker-b	INFO	608	21212	timeout waiting on upstream
+1245	1700016185	cache-1	WARN	615	21229	wrote batch
+1246	1700016198	web-1	DEBUG	622	21246	auth ok
+1247	1700016211	web-2	ERROR	629	21263	rate limited
+1248	1700016224	api-1	INFO	636	21280	accepted connection
+1249	1700016237	api-2	INFO	643	21297	query ok
+1250	1700016250	worker-a	INFO	650	21314	cache miss
+1251	1700016263	worker-b	WARN	657	21331	retry scheduled
+1252	1700016276	cache-1	DEBUG	664	21348	timeout waiting on upstream
+1253	1700016289	web-1	ERROR	671	21365	wrote batch
+1254	1700016302	web-2	INFO	678	21382	auth ok
+1255	1700016315	api-1	INFO	685	21399	rate limited
+1256	1700016328	api-2	INFO	692	21416	accepted connection
+1257	1700016341	worker-a	WARN	699	21433	query ok
+1258	1700016354	worker-b	DEBUG	706	21450	cache miss
+1259	1700016367	cache-1	ERROR	713	21467	retry scheduled
+1260	1700016380	web-1	INFO	720	21484	timeout waiting on upstream
+1261	1700016393	web-2	INFO	727	21501	wrote batch
+1262	1700016406	api-1	INFO	734	21518	auth ok
+1263	1700016419	api-2	WARN	741	21535	rate limited
+1264	1700016432	worker-a	DEBUG	748	21552	accepted connection
+1265	1700016445	worker-b	ERROR	755	21569	query ok
+1266	1700016458	cache-1	INFO	762	21586	cache miss
+1267	1700016471	web-1	INFO	769	21603	retry scheduled
+1268	1700016484	web-2	INFO	776	21620	timeout waiting on upstream
+1269	1700016497	api-1	WARN	783	21637	wrote batch
+1270	1700016510	api-2	DEBUG	790	21654	auth ok
+1271	1700016523	worker-a	ERROR	797	21671	rate limited
+1272	1700016536	worker-b	INFO	804	21688	accepted connection
+1273	1700016549	cache-1	INFO	811	21705	query ok
+1274	1700016562	web-1	INFO	818	21722	cache miss
+1275	1700016575	web-2	WARN	825	21739	retry scheduled
+1276	1700016588	api-1	DEBUG	832	21756	timeout waiting on upstream
+1277	1700016601	api-2	ERROR	839	21773	wrote batch
+1278	1700016614	worker-a	INFO	846	21790	auth ok
+1279	1700016627	worker-b	INFO	853	21807	rate limited
+1280	1700016640	cache-1	INFO	860	21824	accepted connection
+1281	1700016653	web-1	WARN	867	21841	query ok
+1282	1700016666	web-2	DEBUG	874	21858	cache miss
+1283	1700016679	api-1	ERROR	881	21875	retry scheduled
+1284	1700016692	api-2	INFO	888	21892	timeout waiting on upstream
+1285	1700016705	worker-a	INFO	895	21909	wrote batch
+1286	1700016718	worker-b	INFO	2	21926	auth ok
+1287	1700016731	cache-1	WARN	9	21943	rate limited
+1288	1700016744	web-1	DEBUG	16	21960	accepted connection
+1289	1700016757	web-2	ERROR	23	21977	query ok
+1290	1700016770	api-1	INFO	30	21994	cache miss
+1291	1700016783	api-2	INFO	37	22011	retry scheduled
+1292	1700016796	worker-a	INFO	44	22028	timeout waiting on upstream
+1293	1700016809	worker-b	WARN	51	22045	wrote batch
+1294	1700016822	cache-1	DEBUG	58	22062	auth ok
+1295	1700016835	web-1	ERROR	65	22079	rate limited
+1296	1700016848	web-2	INFO	72	22096	accepted connection
+1297	1700016861	api-1	INFO	79	22113	query ok
+1298	1700016874	api-2	INFO	86	22130	cache miss
+1299	1700016887	worker-a	WARN	93	22147	retry scheduled
+1300	1700016900	worker-b	DEBUG	100	22164	timeout waiting on upstream
+1301	1700016913	cache-1	ERROR	107	22181	wrote batch
+1302	1700016926	web-1	INFO	114	22198	auth ok
+1303	1700016939	web-2	INFO	121	22215	rate limited
+1304	1700016952	api-1	INFO	128	22232	accepted connection
+1305	1700016965	api-2	WARN	135	22249	query ok
+1306	1700016978	worker-a	DEBUG	142	22266	cache miss
+1307	1700016991	worker-b	ERROR	149	22283	retry scheduled
+1308	1700017004	cache-1	INFO	156	22300	timeout waiting on upstream
+1309	1700017017	web-1	INFO	163	22317	wrote batch
+1310	1700017030	web-2	INFO	170	22334	auth ok
+1311	1700017043	api-1	WARN	177	22351	rate limited
+1312	1700017056	api-2	DEBUG	184	22368	accepted connection
+1313	1700017069	worker-a	ERROR	191	22385	query ok
+1314	1700017082	worker-b	INFO	198	22402	cache miss
+1315	1700017095	cache-1	INFO	205	22419	retry scheduled
+1316	1700017108	web-1	INFO	212	22436	timeout waiting on upstream
+1317	1700017121	web-2	WARN	219	22453	wrote batch
+1318	1700017134	api-1	DEBUG	226	22470	auth ok
+1319	1700017147	api-2	ERROR	233	22487	rate limited
+1320	1700017160	worker-a	INFO	240	22504	accepted connection
+1321	1700017173	worker-b	INFO	247	22521	query ok
+1322	1700017186	cache-1	INFO	254	22538	cache miss
+1323	1700017199	web-1	WARN	261	22555	retry scheduled
+1324	1700017212	web-2	DEBUG	268	22572	timeout waiting on upstream
+1325	1700017225	api-1	ERROR	275	22589	wrote batch
+1326	1700017238	api-2	INFO	282	22606	auth ok
+1327	1700017251	worker-a	INFO	289	22623	rate limited
+1328	1700017264	worker-b	INFO	296	22640	accepted connection
+1329	1700017277	cache-1	WARN	303	22657	query ok
+1330	1700017290	web-1	DEBUG	310	22674	cache miss
+1331	1700017303	web-2	ERROR	317	22691	retry scheduled
+1332	1700017316	api-1	INFO	324	22708	timeout waiting on upstream
+1333	1700017329	api-2	INFO	331	22725	wrote batch
+1334	1700017342	worker-a	INFO	338	22742	auth ok
+1335	1700017355	worker-b	WARN	345	22759	rate limited
+1336	1700017368	cache-1	DEBUG	352	22776	accepted connection
+1337	1700017381	web-1	ERROR	359	22793	query ok
+1338	1700017394	web-2	INFO	366	22810	cache miss
+1339	1700017407	api-1	INFO	373	22827	retry scheduled
+1340	1700017420	api-2	INFO	380	22844	timeout waiting on upstream
+1341	1700017433	worker-a	WARN	387	22861	wrote batch
+1342	1700017446	worker-b	DEBUG	394	22878	auth ok
+1343	1700017459	cache-1	ERROR	401	22895	rate limited
+1344	1700017472	web-1	INFO	408	22912	accepted connection
+1345	1700017485	web-2	INFO	415	22929	query ok
+1346	1700017498	api-1	INFO	422	22946	cache miss
+1347	1700017511	api-2	WARN	429	22963	retry scheduled
+1348	1700017524	worker-a	DEBUG	436	22980	timeout waiting on upstream
+1349	1700017537	worker-b	ERROR	443	22997	wrote batch
+1350	1700017550	cache-1	INFO	450	23014	auth ok
+1351	1700017563	web-1	INFO	457	23031	rate limited
+1352	1700017576	web-2	INFO	464	23048	accepted connection
+1353	1700017589	api-1	WARN	471	23065	query ok
+1354	1700017602	api-2	DEBUG	478	23082	cache miss
+1355	1700017615	worker-a	ERROR	485	23099	retry scheduled
+1356	1700017628	worker-b	INFO	492	23116	timeout waiting on upstream
+1357	1700017641	cache-1	INFO	499	23133	wrote batch
+1358	1700017654	web-1	INFO	506	23150	auth ok
+1359	1700017667	web-2	WARN	513	23167	rate limited
+1360	1700017680	api-1	DEBUG	520	23184	accepted connection
+1361	1700017693	api-2	ERROR	527	23201	query ok
+1362	1700017706	worker-a	INFO	534	23218	cache miss
+1363	1700017719	worker-b	INFO	541	23235	retry scheduled
+1364	1700017732	cache-1	INFO	548	23252	timeout waiting on upstream
+1365	1700017745	web-1	WARN	555	23269	wrote batch
+1366	1700017758	web-2	DEBUG	562	23286	auth ok
+1367	1700017771	api-1	ERROR	569	23303	rate limited
+1368	1700017784	api-2	INFO	576	23320	accepted connection
+1369	1700017797	worker-a	INFO	583	23337	query ok
+1370	1700017810	worker-b	INFO	590	23354	cache miss
+1371	1700017823	cache-1	WARN	597	23371	retry scheduled
+1372	1700017836	web-1	DEBUG	604	23388	timeout waiting on upstream
+1373	1700017849	web-2	ERROR	611	23405	wrote batch
+1374	1700017862	api-1	INFO	618	23422	auth ok
+1375	1700017875	api-2	INFO	625	23439	rate limited
+1376	1700017888	worker-a	INFO	632	23456	accepted connection
+1377	1700017901	worker-b	WARN	639	23473	query ok
+1378	1700017914	cache-1	DEBUG	646	23490	cache miss
+1379	1700017927	web-1	ERROR	653	23507	retry scheduled
+1380	1700017940	web-2	INFO	660	23524	timeout waiting on upstream
+1381	1700017953	api-1	INFO	667	23541	wrote batch
+1382	1700017966	api-2	INFO	674	23558	auth ok
+1383	1700017979	worker-a	WARN	681	23575	rate limited
+1384	1700017992	worker-b	DEBUG	688	23592	accepted connection
+1385	1700018005	cache-1	ERROR	695	23609	query ok
+1386	1700018018	web-1	INFO	702	23626	cache miss
+1387	1700018031	web-2	INFO	709	23643	retry scheduled
+1388	1700018044	api-1	INFO	716	23660	timeout waiting on upstream
+1389	1700018057	api-2	WARN	723	23677	wrote batch
+1390	1700018070	worker-a	DEBUG	730	23694	auth ok
+1391	1700018083	worker-b	ERROR	737	23711	rate limited
+1392	1700018096	cache-1	INFO	744	23728	accepted connection
+1393	1700018109	web-1	INFO	751	23745	query ok
+1394	1700018122	web-2	INFO	758	23762	cache miss
+1395	1700018135	api-1	WARN	765	23779	retry scheduled
+1396	1700018148	api-2	DEBUG	772	23796	timeout waiting on upstream
+1397	1700018161	worker-a	ERROR	779	23813	wrote batch
+1398	1700018174	worker-b	INFO	786	23830	auth ok
+1399	1700018187	cache-1	INFO	793	23847	rate limited
+1400	1700018200	web-1	INFO	800	23864	accepted connection
+1401	1700018213	web-2	WARN	807	23881	query ok
+1402	1700018226	api-1	DEBUG	814	23898	cache miss
+1403	1700018239	api-2	ERROR	821	23915	retry scheduled
+1404	1700018252	worker-a	INFO	828	23932	timeout waiting on upstream
+1405	1700018265	worker-b	INFO	835	23949	wrote batch
+1406	1700018278	cache-1	INFO	842	23966	auth ok
+1407	1700018291	web-1	WARN	849	23983	rate limited
+1408	1700018304	web-2	DEBUG	856	24000	accepted connection
+1409	1700018317	api-1	ERROR	863	24017	query ok
+1410	1700018330	api-2	INFO	870	24034	cache miss
+1411	1700018343	worker-a	INFO	877	24051	retry scheduled
+1412	1700018356	worker-b	INFO	884	24068	timeout waiting on upstream
+1413	1700018369	cache-1	WARN	891	24085	wrote batch
+1414	1700018382	web-1	DEBUG	898	24102	auth ok
+1415	1700018395	web-2	ERROR	5	24119	rate limited
+1416	1700018408	api-1	INFO	12	24136	accepted connection
+1417	1700018421	api-2	INFO	19	24153	query ok
+1418	1700018434	worker-a	INFO	26	24170	cache miss
+1419	1700018447	worker-b	WARN	33	24187	retry scheduled
+1420	1700018460	cache-1	DEBUG	40	24204	timeout waiting on upstream
+1421	1700018473	web-1	ERROR	47	24221	wrote batch
+1422	1700018486	web-2	INFO	54	24238	auth ok
+1423	1700018499	api-1	INFO	61	24255	rate limited
+1424	1700018512	api-2	INFO	68	24272	accepted connection
+1425	1700018525	worker-a	WARN	75	24289	query ok
+1426	1700018538	worker-b	DEBUG	82	24306	cache miss
+1427	1700018551	cache-1	ERROR	89	24323	retry scheduled
+1428	1700018564	web-1	INFO	96	24340	timeout waiting on upstream
+1429	1700018577	web-2	INFO	103	24357	wrote batch
+1430	1700018590	api-1	INFO	110	24374	auth ok
+1431	1700018603	api-2	WARN	117	24391	rate limited
+1432	1700018616	worker-a	DEBUG	124	24408	accepted connection
+1433	1700018629	worker-b	ERROR	131	24425	query ok
+1434	1700018642	cache-1	INFO	138	24442	cache miss
+1435	1700018655	web-1	INFO	145	24459	retry scheduled
+1436	1700018668	web-2	INFO	152	24476	timeout waiting on upstream
+1437	1700018681	api-1	WARN	159	24493	wrote batch
+1438	1700018694	api-2	DEBUG	166	24510	auth ok
+1439	1700018707	worker-a	ERROR	173	24527	rate limited
+1440	1700018720	worker-b	INFO	180	24544	accepted connection
+1441	1700018733	cache-1	INFO	187	24561	query ok
+1442	1700018746	web-1	INFO	194	24578	cache miss
+1443	1700018759	web-2	WARN	201	24595	retry scheduled
+1444	1700018772	api-1	DEBUG	208	24612	timeout waiting on upstream
+1445	1700018785	api-2	ERROR	215	24629	wrote batch
+1446	1700018798	worker-a	INFO	222	24646	auth ok
+1447	1700018811	worker-b	INFO	229	24663	rate limited
+1448	1700018824	cache-1	INFO	236	24680	accepted connection
+1449	1700018837	web-1	WARN	243	24697	query ok
+1450	1700018850	web-2	DEBUG	250	24714	cache miss
+1451	1700018863	api-1	ERROR	257	24731	retry scheduled
+1452	1700018876	api-2	INFO	264	24748	timeout waiting on upstream
+1453	1700018889	worker-a	INFO	271	24765	wrote batch
+1454	1700018902	worker-b	INFO	278	24782	auth ok
+1455	1700018915	cache-1	WARN	285	24799	rate limited
+1456	1700018928	web-1	DEBUG	292	24816	accepted connection
+1457	1700018941	web-2	ERROR	299	24833	query ok
+1458	1700018954	api-1	INFO	306	24850	cache miss
+1459	1700018967	api-2	INFO	313	24867	retry scheduled
+1460	1700018980	worker-a	INFO	320	24884	timeout waiting on upstream
+1461	1700018993	worker-b	WARN	327	24901	wrote batch
+1462	1700019006	cache-1	DEBUG	334	24918	auth ok
+1463	1700019019	web-1	ERROR	341	24935	rate limited
+1464	1700019032	web-2	INFO	348	24952	accepted connection
+1465	1700019045	api-1	INFO	355	24969	query ok
+1466	1700019058	api-2	INFO	362	24986	cache miss
+1467	1700019071	worker-a	WARN	369	25003	retry scheduled
+1468	1700019084	worker-b	DEBUG	376	25020	timeout waiting on upstream
+1469	1700019097	cache-1	ERROR	383	25037	wrote batch
+1470	1700019110	web-1	INFO	390	25054	auth ok
+1471	1700019123	web-2	INFO	397	25071	rate limited
+1472	1700019136	api-1	INFO	404	25088	accepted connection
+1473	1700019149	api-2	WARN	411	25105	query ok
+1474	1700019162	worker-a	DEBUG	418	25122	cache miss
+1475	1700019175	worker-b	ERROR	425	25139	retry scheduled
+1476	1700019188	cache-1	INFO	432	25156	timeout waiting on upstream
+1477	1700019201	web-1	INFO	439	25173	wrote batch
+1478	1700019214	web-2	INFO	446	25190	auth ok
+1479	1700019227	api-1	WARN	453	25207	rate limited
+1480	1700019240	api-2	DEBUG	460	25224	accepted connection
+1481	1700019253	worker-a	ERROR	467	25241	query ok
+1482	1700019266	worker-b	INFO	474	25258	cache miss
+1483	1700019279	cache-1	INFO	481	25275	retry scheduled
+1484	1700019292	web-1	INFO	488	25292	timeout waiting on upstream
+1485	1700019305	web-2	WARN	495	25309	wrote batch
+1486	1700019318	api-1	DEBUG	502	25326	auth ok
+1487	1700019331	api-2	ERROR	509	25343	rate limited
+1488	1700019344	worker-a	INFO	516	25360	accepted connection
+1489	1700019357	worker-b	INFO	523	25377	query ok
+1490	1700019370	cache-1	INFO	530	25394	cache miss
+1491	1700019383	web-1	WARN	537	25411	retry scheduled
+1492	1700019396	web-2	DEBUG	544	25428	timeout waiting on upstream
+1493	1700019409	api-1	ERROR	551	25445	wrote batch
+1494	1700019422	api-2	INFO	558	25462	auth ok
+1495	1700019435	worker-a	INFO	565	25479	rate limited
+1496	1700019448	worker-b	INFO	572	25496	accepted connection
+1497	1700019461	cache-1	WARN	579	25513	query ok
+1498	1700019474	web-1	DEBUG	586	25530	cache miss
+1499	1700019487	web-2	ERROR	593	25547	retry scheduled
+1500	1700019500	api-1	INFO	600	25564	timeout waiting on upstream
+1501	1700019513	api-2	INFO	607	25581	wrote batch
+1502	1700019526	worker-a	INFO	614	25598	auth ok
+1503	1700019539	worker-b	WARN	621	25615	rate limited
+1504	1700019552	cache-1	DEBUG	628	25632	accepted connection
+1505	1700019565	web-1	ERROR	635	25649	query ok
+1506	1700019578	web-2	INFO	642	25666	cache miss
+1507	1700019591	api-1	INFO	649	25683	retry scheduled
+1508	1700019604	api-2	INFO	656	25700	timeout waiting on upstream
+1509	1700019617	worker-a	WARN	663	25717	wrote batch
+1510	1700019630	worker-b	DEBUG	670	25734	auth ok
+1511	1700019643	cache-1	ERROR	677	25751	rate limited
+1512	1700019656	web-1	INFO	684	25768	accepted connection
+1513	1700019669	web-2	INFO	691	25785	query ok
+1514	1700019682	api-1	INFO	698	25802	cache miss
+1515	1700019695	api-2	WARN	705	25819	retry scheduled
+1516	1700019708	worker-a	DEBUG	712	25836	timeout waiting on upstream
+1517	1700019721	worker-b	ERROR	719	25853	wrote batch
+1518	1700019734	cache-1	INFO	726	25870	auth ok
+1519	1700019747	web-1	INFO	733	25887	rate limited
+1520	1700019760	web-2	INFO	740	25904	accepted connection
+1521	1700019773	api-1	WARN	747	25921	query ok
+1522	1700019786	api-2	DEBUG	754	25938	cache miss
+1523	1700019799	worker-a	ERROR	761	25955	retry scheduled
+1524	1700019812	worker-b	INFO	768	25972	timeout waiting on upstream
+1525	1700019825	cache-1	INFO	775	25989	wrote batch
+1526	1700019838	web-1	INFO	782	26006	auth ok
+1527	1700019851	web-2	WARN	789	26023	rate limited
+1528	1700019864	api-1	DEBUG	796	26040	accepted connection
+1529	1700019877	api-2	ERROR	803	26057	query ok
+1530	1700019890	worker-a	INFO	810	26074	cache miss
+1531	1700019903	worker-b	INFO	817	26091	retry scheduled
+1532	1700019916	cache-1	INFO	824	26108	timeout waiting on upstream
+1533	1700019929	web-1	WARN	831	26125	wrote batch
+1534	1700019942	web-2	DEBUG	838	26142	auth ok
+1535	1700019955	api-1	ERROR	845	26159	rate limited
+1536	1700019968	api-2	INFO	852	26176	accepted connection
+1537	1700019981	worker-a	INFO	859	26193	query ok
+1538	1700019994	worker-b	INFO	866	26210	cache miss
+1539	1700020007	cache-1	WARN	873	26227	retry scheduled
+1540	1700020020	web-1	DEBUG	880	26244	timeout waiting on upstream
+1541	1700020033	web-2	ERROR	887	26261	wrote batch
+1542	1700020046	api-1	INFO	894	26278	auth ok
+1543	1700020059	api-2	INFO	1	26295	rate limited
+1544	1700020072	worker-a	INFO	8	26312	accepted connection
+1545	1700020085	worker-b	WARN	15	26329	query ok
+1546	1700020098	cache-1	DEBUG	22	26346	cache miss
+1547	1700020111	web-1	ERROR	29	26363	retry scheduled
+1548	1700020124	web-2	INFO	36	26380	timeout waiting on upstream
+1549	1700020137	api-1	INFO	43	26397	wrote batch
+1550	1700020150	api-2	INFO	50	26414	auth ok
+1551	1700020163	worker-a	WARN	57	26431	rate limited
+1552	1700020176	worker-b	DEBUG	64	26448	accepted connection
+1553	1700020189	cache-1	ERROR	71	26465	query ok
+1554	1700020202	web-1	INFO	78	26482	cache miss
+1555	1700020215	web-2	INFO	85	26499	retry scheduled
+1556	1700020228	api-1	INFO	92	26516	timeout waiting on upstream
+1557	1700020241	api-2	WARN	99	26533	wrote batch
+1558	1700020254	worker-a	DEBUG	106	26550	auth ok
+1559	1700020267	worker-b	ERROR	113	26567	rate limited
+1560	1700020280	cache-1	INFO	120	26584	accepted connection
+1561	1700020293	web-1	INFO	127	26601	query ok
+1562	1700020306	web-2	INFO	134	26618	cache miss
+1563	1700020319	api-1	WARN	141	26635	retry scheduled
+1564	1700020332	api-2	DEBUG	148	26652	timeout waiting on upstream
+1565	1700020345	worker-a	ERROR	155	26669	wrote batch
+1566	1700020358	worker-b	INFO	162	26686	auth ok
+1567	1700020371	cache-1	INFO	169	26703	rate limited
+1568	1700020384	web-1	INFO	176	26720	accepted connection
+1569	1700020397	web-2	WARN	183	26737	query ok
+1570	1700020410	api-1	DEBUG	190	26754	cache miss
+1571	1700020423	api-2	ERROR	197	26771	retry scheduled
+1572	1700020436	worker-a	INFO	204	26788	timeout waiting on upstream
+1573	1700020449	worker-b	INFO	211	26805	wrote batch
+1574	1700020462	cache-1	INFO	218	26822	auth ok
+1575	1700020475	web-1	WARN	225	26839	rate limited
+1576	1700020488	web-2	DEBUG	232	26856	accepted connection
+1577	1700020501	api-1	ERROR	239	26873	query ok
+1578	1700020514	api-2	INFO	246	26890	cache miss
+1579	1700020527	worker-a	INFO	253	26907	retry scheduled
+1580	1700020540	worker-b	INFO	260	26924	timeout waiting on upstream
+1581	1700020553	cache-1	WARN	267	26941	wrote batch
+1582	1700020566	web-1	DEBUG	274	26958	auth ok
+1583	1700020579	web-2	ERROR	281	26975	rate limited
+1584	1700020592	api-1	INFO	288	26992	accepted connection
+1585	1700020605	api-2	INFO	295	27009	query ok
+1586	1700020618	worker-a	INFO	302	27026	cache miss
+1587	1700020631	worker-b	WARN	309	27043	retry scheduled
+1588	1700020644	cache-1	DEBUG	316	27060	timeout waiting on upstream
+1589	1700020657	web-1	ERROR	323	27077	wrote batch
+1590	1700020670	web-2	INFO	330	27094	auth ok
+1591	1700020683	api-1	INFO	337	27111	rate limited
+1592	1700020696	api-2	INFO	344	27128	accepted connection
+1593	1700020709	worker-a	WARN	351	27145	query ok
+1594	1700020722	worker-b	DEBUG	358	27162	cache miss
+1595	1700020735	cache-1	ERROR	365	27179	retry scheduled
+1596	1700020748	web-1	INFO	372	27196	timeout waiting on upstream
+1597	1700020761	web-2	INFO	379	27213	wrote batch
+1598	1700020774	api-1	INFO	386	27230	auth ok
+1599	1700020787	api-2	WARN	393	27247	rate limited
+1600	1700020800	worker-a	DEBUG	400	27264	accepted connection
+1601	1700020813	worker-b	ERROR	407	27281	query ok
+1602	1700020826	cache-1	INFO	414	27298	cache miss
+1603	1700020839	web-1	INFO	421	27315	retry scheduled
+1604	1700020852	web-2	INFO	428	27332	timeout waiting on upstream
+1605	1700020865	api-1	WARN	435	27349	wrote batch
+1606	1700020878	api-2	DEBUG	442	27366	auth ok
+1607	1700020891	worker-a	ERROR	449	27383	rate limited
+1608	1700020904	worker-b	INFO	456	27400	accepted connection
+1609	1700020917	cache-1	INFO	463	27417	query ok
+1610	1700020930	web-1	INFO	470	27434	cache miss
+1611	1700020943	web-2	WARN	477	27451	retry scheduled
+1612	1700020956	api-1	DEBUG	484	27468	timeout waiting on upstream
+1613	1700020969	api-2	ERROR	491	27485	wrote batch
+1614	1700020982	worker-a	INFO	498	27502	auth ok
+1615	1700020995	worker-b	INFO	505	27519	rate limited
+1616	1700021008	cache-1	INFO	512	27536	accepted connection
+1617	1700021021	web-1	WARN	519	27553	query ok
+1618	1700021034	web-2	DEBUG	526	27570	cache miss
+1619	1700021047	api-1	ERROR	533	27587	retry scheduled
+1620	1700021060	api-2	INFO	540	27604	timeout waiting on upstream
+1621	1700021073	worker-a	INFO	547	27621	wrote batch
+1622	1700021086	worker-b	INFO	554	27638	auth ok
+1623	1700021099	cache-1	WARN	561	27655	rate limited
+1624	1700021112	web-1	DEBUG	568	27672	accepted connection
+1625	1700021125	web-2	ERROR	575	27689	query ok
+1626	1700021138	api-1	INFO	582	27706	cache miss
+1627	1700021151	api-2	INFO	589	27723	retry scheduled
+1628	1700021164	worker-a	INFO	596	27740	timeout waiting on upstream
+1629	1700021177	worker-b	WARN	603	27757	wrote batch
+1630	1700021190	cache-1	DEBUG	610	27774	auth ok
+1631	1700021203	web-1	ERROR	617	27791	rate limited
+1632	1700021216	web-2	INFO	624	27808	accepted connection
+1633	1700021229	api-1	INFO	631	27825	query ok
+1634	1700021242	api-2	INFO	638	27842	cache miss
+1635	1700021255	worker-a	WARN	645	27859	retry scheduled
+1636	1700021268	worker-b	DEBUG	652	27876	timeout waiting on upstream
+1637	1700021281	cache-1	ERROR	659	27893	wrote batch
+1638	1700021294	web-1	INFO	666	27910	auth ok
+1639	1700021307	web-2	INFO	673	27927	rate limited
+1640	1700021320	api-1	INFO	680	27944	accepted connection
+1641	1700021333	api-2	WARN	687	27961	query ok
+1642	1700021346	worker-a	DEBUG	694	27978	cache miss
+1643	1700021359	worker-b	ERROR	701	27995	retry scheduled
+1644	1700021372	cache-1	INFO	708	28012	timeout waiting on upstream
+1645	1700021385	web-1	INFO	715	28029	wrote batch
+1646	1700021398	web-2	INFO	722	28046	auth ok
+1647	1700021411	api-1	WARN	729	28063	rate limited
+1648	1700021424	api-2	DEBUG	736	28080	accepted connection
+1649	1700021437	worker-a	ERROR	743	28097	query ok
+1650	1700021450	worker-b	INFO	750	28114	cache miss
+1651	1700021463	cache-1	INFO	757	28131	retry scheduled
+1652	1700021476	web-1	INFO	764	28148	timeout waiting on upstream
+1653	1700021489	web-2	WARN	771	28165	wrote batch
+1654	1700021502	api-1	DEBUG	778	28182	auth ok
+1655	1700021515	api-2	ERROR	785	28199	rate limited
+1656	1700021528	worker-a	INFO	792	28216	accepted connection
+1657	1700021541	worker-b	INFO	799	28233	query ok
+1658	1700021554	cache-1	INFO	806	28250	cache miss
+1659	1700021567	web-1	WARN	813	28267	retry scheduled
+1660	1700021580	web-2	DEBUG	820	28284	timeout waiting on upstream
+1661	1700021593	api-1	ERROR	827	28301	wrote batch
+1662	1700021606	api-2	INFO	834	28318	auth ok
+1663	1700021619	worker-a	INFO	841	28335	rate limited
+1664	1700021632	worker-b	INFO	848	28352	accepted connection
+1665	1700021645	cache-1	WARN	855	28369	query ok
+1666	1700021658	web-1	DEBUG	862	28386	cache miss
+1667	1700021671	web-2	ERROR	869	28403	retry scheduled
+1668	1700021684	api-1	INFO	876	28420	timeout waiting on upstream
+1669	1700021697	api-2	INFO	883	28437	wrote batch
+1670	1700021710	worker-a	INFO	890	28454	auth ok
+1671	1700021723	worker-b	WARN	897	28471	rate limited
+1672	1700021736	cache-1	DEBUG	4	28488	accepted connection
+1673	1700021749	web-1	ERROR	11	28505	query ok
+1674	1700021762	web-2	INFO	18	28522	cache miss
+1675	1700021775	api-1	INFO	25	28539	retry scheduled
+1676	1700021788	api-2	INFO	32	28556	timeout waiting on upstream
+1677	1700021801	worker-a	WARN	39	28573	wrote batch
+1678	1700021814	worker-b	DEBUG	46	28590	auth ok
+1679	1700021827	cache-1	ERROR	53	28607	rate limited
+1680	1700021840	web-1	INFO	60	28624	accepted connection
+1681	1700021853	web-2	INFO	67	28641	query ok
+1682	1700021866	api-1	INFO	74	28658	cache miss
+1683	1700021879	api-2	WARN	81	28675	retry scheduled
+1684	1700021892	worker-a	DEBUG	88	28692	timeout waiting on upstream
+1685	1700021905	worker-b	ERROR	95	28709	wrote batch
+1686	1700021918	cache-1	INFO	102	28726	auth ok
+1687	1700021931	web-1	INFO	109	28743	rate limited
+1688	1700021944	web-2	INFO	116	28760	accepted connection
+1689	1700021957	api-1	WARN	123	28777	query ok
+1690	1700021970	api-2	DEBUG	130	28794	cache miss
+1691	1700021983	worker-a	ERROR	137	28811	retry scheduled
+1692	1700021996	worker-b	INFO	144	28828	timeout waiting on upstream
+1693	1700022009	cache-1	INFO	151	28845	wrote batch
+1694	1700022022	web-1	INFO	158	28862	auth ok
+1695	1700022035	web-2	WARN	165	28879	rate limited
+1696	1700022048	api-1	DEBUG	172	28896	accepted connection
+1697	1700022061	api-2	ERROR	179	28913	query ok
+1698	1700022074	worker-a	INFO	186	28930	cache miss
+1699	1700022087	worker-b	INFO	193	28947	retry scheduled
+1700	1700022100	cache-1	INFO	200	28964	timeout waiting on upstream
+1701	1700022113	web-1	WARN	207	28981	wrote batch
+1702	1700022126	web-2	DEBUG	214	28998	auth ok
+1703	1700022139	api-1	ERROR	221	29015	rate limited
+1704	1700022152	api-2	INFO	228	29032	accepted connection
+1705	1700022165	worker-a	INFO	235	29049	query ok
+1706	1700022178	worker-b	INFO	242	29066	cache miss
+1707	1700022191	cache-1	WARN	249	29083	retry scheduled
+1708	1700022204	web-1	DEBUG	256	29100	timeout waiting on upstream
+1709	1700022217	web-2	ERROR	263	29117	wrote batch
+1710	1700022230	api-1	INFO	270	29134	auth ok
+1711	1700022243	api-2	INFO	277	29151	rate limited
+1712	1700022256	worker-a	INFO	284	29168	accepted connection
+1713	1700022269	worker-b	WARN	291	29185	query ok
+1714	1700022282	cache-1	DEBUG	298	29202	cache miss
+1715	1700022295	web-1	ERROR	305	29219	retry scheduled
+1716	1700022308	web-2	INFO	312	29236	timeout waiting on upstream
+1717	1700022321	api-1	INFO	319	29253	wrote batch
+1718	1700022334	api-2	INFO	326	29270	auth ok
+1719	1700022347	worker-a	WARN	333	29287	rate limited
+1720	1700022360	worker-b	DEBUG	340	29304	accepted connection
+1721	1700022373	cache-1	ERROR	347	29321	query ok
+1722	1700022386	web-1	INFO	354	29338	cache miss
+1723	1700022399	web-2	INFO	361	29355	retry scheduled
+1724	1700022412	api-1	INFO	368	29372	timeout waiting on upstream
+1725	1700022425	api-2	WARN	375	29389	wrote batch
+1726	1700022438	worker-a	DEBUG	382	29406	auth ok
+1727	1700022451	worker-b	ERROR	389	29423	rate limited
+1728	1700022464	cache-1	INFO	396	29440	accepted connection
+1729	1700022477	web-1	INFO	403	29457	query ok
+1730	1700022490	web-2	INFO	410	29474	cache miss
+1731	1700022503	api-1	WARN	417	29491	retry scheduled
+1732	1700022516	api-2	DEBUG	424	29508	timeout waiting on upstream
+1733	1700022529	worker-a	ERROR	431	29525	wrote batch
+1734	1700022542	worker-b	INFO	438	29542	auth ok
+1735	1700022555	cache-1	INFO	445	29559	rate limited
+1736	1700022568	web-1	INFO	452	29576	accepted connection
+1737	1700022581	web-2	WARN	459	29593	query ok
+1738	1700022594	api-1	DEBUG	466	29610	cache miss
+1739	1700022607	api-2	ERROR	473	29627	retry scheduled
+1740	1700022620	worker-a	INFO	480	29644	timeout waiting on upstream
+1741	1700022633	worker-b	INFO	487	29661	wrote batch
+1742	1700022646	cache-1	INFO	494	29678	auth ok
+1743	1700022659	web-1	WARN	501	29695	rate limited
+1744	1700022672	web-2	DEBUG	508	29712	accepted connection
+1745	1700022685	api-1	ERROR	515	29729	query ok
+1746	1700022698	api-2	INFO	522	29746	cache miss
+1747	1700022711	worker-a	INFO	529	29763	retry scheduled
+1748	1700022724	worker-b	INFO	536	29780	timeout waiting on upstream
+1749	1700022737	cache-1	WARN	543	29797	wrote batch
+1750	1700022750	web-1	DEBUG	550	29814	auth ok
+1751	1700022763	web-2	ERROR	557	29831	rate limited
+1752	1700022776	api-1	INFO	564	29848	accepted connection
+1753	1700022789	api-2	INFO	571	29865	query ok
+1754	1700022802	worker-a	INFO	578	29882	cache miss
+1755	1700022815	worker-b	WARN	585	29899	retry scheduled
+1756	1700022828	cache-1	DEBUG	592	29916	timeout waiting on upstream
+1757	1700022841	web-1	ERROR	599	29933	wrote batch
+1758	1700022854	web-2	INFO	606	29950	auth ok
+1759	1700022867	api-1	INFO	613	29967	rate limited
+1760	1700022880	api-2	INFO	620	29984	accepted connection
+1761	1700022893	worker-a	WARN	627	30001	query ok
+1762	1700022906	worker-b	DEBUG	634	30018	cache miss
+1763	1700022919	cache-1	ERROR	641	30035	retry scheduled
+1764	1700022932	web-1	INFO	648	30052	timeout waiting on upstream
+1765	1700022945	web-2	INFO	655	30069	wrote batch
+1766	1700022958	api-1	INFO	662	30086	auth ok
+1767	1700022971	api-2	WARN	669	30103	rate limited
+1768	1700022984	worker-a	DEBUG	676	30120	accepted connection
+1769	1700022997	worker-b	ERROR	683	30137	query ok
+1770	1700023010	cache-1	INFO	690	30154	cache miss
+1771	1700023023	web-1	INFO	697	30171	retry scheduled
+1772	1700023036	web-2	INFO	704	30188	timeout waiting on upstream
+1773	1700023049	api-1	WARN	711	30205	wrote batch
+1774	1700023062	api-2	DEBUG	718	30222	auth ok
+1775	1700023075	worker-a	ERROR	725	30239	rate limited
+1776	1700023088	worker-b	INFO	732	30256	accepted connection
+1777	1700023101	cache-1	INFO	739	30273	query ok
+1778	1700023114	web-1	INFO	746	30290	cache miss
+1779	1700023127	web-2	WARN	753	30307	retry scheduled
+1780	1700023140	api-1	DEBUG	760	30324	timeout waiting on upstream
+1781	1700023153	api-2	ERROR	767	30341	wrote batch
+1782	1700023166	worker-a	INFO	774	30358	auth ok
+1783	1700023179	worker-b	INFO	781	30375	rate limited
+1784	1700023192	cache-1	INFO	788	30392	accepted connection
+1785	1700023205	web-1	WARN	795	30409	query ok
+1786	1700023218	web-2	DEBUG	802	30426	cache miss
+1787	1700023231	api-1	ERROR	809	30443	retry scheduled
+1788	1700023244	api-2	INFO	816	30460	timeout waiting on upstream
+1789	1700023257	worker-a	INFO	823	30477	wrote batch
+1790	1700023270	worker-b	INFO	830	30494	auth ok
+1791	1700023283	cache-1	WARN	837	30511	rate limited
+1792	1700023296	web-1	DEBUG	844	30528	accepted connection
+1793	1700023309	web-2	ERROR	851	30545	query ok
+1794	1700023322	api-1	INFO	858	30562	cache miss
+1795	1700023335	api-2	INFO	865	30579	retry scheduled
+1796	1700023348	worker-a	INFO	872	30596	timeout waiting on upstream
+1797	1700023361	worker-b	WARN	879	30613	wrote batch
+1798	1700023374	cache-1	DEBUG	886	30630	auth ok
+1799	1700023387	web-1	ERROR	893	30647	rate limited
+1800	1700023400	web-2	INFO	0	30664	accepted connection
+1801	1700023413	api-1	INFO	7	30681	query ok
+1802	1700023426	api-2	INFO	14	30698	cache miss
+1803	1700023439	worker-a	WARN	21	30715	retry scheduled
+1804	1700023452	worker-b	DEBUG	28	30732	timeout waiting on upstream
+1805	1700023465	cache-1	ERROR	35	30749	wrote batch
+1806	1700023478	web-1	INFO	42	30766	auth ok
+1807	1700023491	web-2	INFO	49	30783	rate limited
+1808	1700023504	api-1	INFO	56	30800	accepted connection
+1809	1700023517	api-2	WARN	63	30817	query ok
+1810	1700023530	worker-a	DEBUG	70	30834	cache miss
+1811	1700023543	worker-b	ERROR	77	30851	retry scheduled
+1812	1700023556	cache-1	INFO	84	30868	timeout waiting on upstream
+1813	1700023569	web-1	INFO	91	30885	wrote batch
+1814	1700023582	web-2	INFO	98	30902	auth ok
+1815	1700023595	api-1	WARN	105	30919	rate limited
+1816	1700023608	api-2	DEBUG	112	30936	accepted connection
+1817	1700023621	worker-a	ERROR	119	30953	query ok
+1818	1700023634	worker-b	INFO	126	30970	cache miss
+1819	1700023647	cache-1	INFO	133	30987	retry scheduled
+1820	1700023660	web-1	INFO	140	31004	timeout waiting on upstream
+1821	1700023673	web-2	WARN	147	31021	wrote batch
+1822	1700023686	api-1	DEBUG	154	31038	auth ok
+1823	1700023699	api-2	ERROR	161	31055	rate limited
+1824	1700023712	worker-a	INFO	168	31072	accepted connection
+1825	1700023725	worker-b	INFO	175	31089	query ok
+1826	1700023738	cache-1	INFO	182	31106	cache miss
+1827	1700023751	web-1	WARN	189	31123	retry scheduled
+1828	1700023764	web-2	DEBUG	196	31140	timeout waiting on upstream
+1829	1700023777	api-1	ERROR	203	31157	wrote batch
+1830	1700023790	api-2	INFO	210	31174	auth ok
+1831	1700023803	worker-a	INFO	217	31191	rate limited
+1832	1700023816	worker-b	INFO	224	31208	accepted connection
+1833	1700023829	cache-1	WARN	231	31225	query ok
+1834	1700023842	web-1	DEBUG	238	31242	cache miss
+1835	1700023855	web-2	ERROR	245	31259	retry scheduled
+1836	1700023868	api-1	INFO	252	31276	timeout waiting on upstream
+1837	1700023881	api-2	INFO	259	31293	wrote batch
+1838	1700023894	worker-a	INFO	266	31310	auth ok
+1839	1700023907	worker-b	WARN	273	31327	rate limited
+1840	1700023920	cache-1	DEBUG	280	31344	accepted connection
+1841	1700023933	web-1	ERROR	287	31361	query ok
+1842	1700023946	web-2	INFO	294	31378	cache miss
+1843	1700023959	api-1	INFO	301	31395	retry scheduled
+1844	1700023972	api-2	INFO	308	31412	timeout waiting on upstream
+1845	1700023985	worker-a	WARN	315	31429	wrote batch
+1846	1700023998	worker-b	DEBUG	322	31446	auth ok
+1847	1700024011	cache-1	ERROR	329	31463	rate limited
+1848	1700024024	web-1	INFO	336	31480	accepted connection
+1849	1700024037	web-2	INFO	343	31497	query ok
+1850	1700024050	api-1	INFO	350	31514	cache miss
+1851	1700024063	api-2	WARN	357	31531	retry scheduled
+1852	1700024076	worker-a	DEBUG	364	31548	timeout waiting on upstream
+1853	1700024089	worker-b	ERROR	371	31565	wrote batch
+1854	1700024102	cache-1	INFO	378	31582	auth ok
+1855	1700024115	web-1	INFO	385	31599	rate limited
+1856	1700024128	web-2	INFO	392	31616	accepted connection
+1857	1700024141	api-1	WARN	399	31633	query ok
+1858	1700024154	api-2	DEBUG	406	31650	cache miss
+1859	1700024167	worker-a	ERROR	413	31667	retry scheduled
+1860	1700024180	worker-b	INFO	420	31684	timeout waiting on upstream
+1861	1700024193	cache-1	INFO	427	31701	wrote batch
+1862	1700024206	web-1	INFO	434	31718	auth ok
+1863	1700024219	web-2	WARN	441	31735	rate limited
+1864	1700024232	api-1	DEBUG	448	31752	accepted connection
+1865	1700024245	api-2	ERROR	455	31769	query ok
+1866	1700024258	worker-a	INFO	462	31786	cache miss
+1867	1700024271	worker-b	INFO	469	31803	retry scheduled
+1868	1700024284	cache-1	INFO	476	31820	timeout waiting on upstream
+1869	1700024297	web-1	WARN	483	31837	wrote batch
+1870	1700024310	web-2	DEBUG	490	31854	auth ok
+1871	1700024323	api-1	ERROR	497	31871	rate limited
+1872	1700024336	api-2	INFO	504	31888	accepted connection
+1873	1700024349	worker-a	INFO	511	31905	query ok
+1874	1700024362	worker-b	INFO	518	31922	cache miss
+1875	1700024375	cache-1	WARN	525	31939	retry scheduled
+1876	1700024388	web-1	DEBUG	532	31956	timeout waiting on upstream
+1877	1700024401	web-2	ERROR	539	31973	wrote batch
+1878	1700024414	api-1	INFO	546	31990	auth ok
+1879	1700024427	api-2	INFO	553	32007	rate limited
+1880	1700024440	worker-a	INFO	560	32024	accepted connection
+1881	1700024453	worker-b	WARN	567	32041	query ok
+1882	1700024466	cache-1	DEBUG	574	32058	cache miss
+1883	1700024479	web-1	ERROR	581	32075	retry scheduled
+1884	1700024492	web-2	INFO	588	32092	timeout waiting on upstream
+1885	1700024505	api-1	INFO	595	32109	wrote batch
+1886	1700024518	api-2	INFO	602	32126	auth ok
+1887	1700024531	worker-a	WARN	609	32143	rate limited
+1888	1700024544	worker-b	DEBUG	616	32160	accepted connection
+1889	1700024557	cache-1	ERROR	623	32177	query ok
+1890	1700024570	web-1	INFO	630	32194	cache miss
+1891	1700024583	web-2	INFO	637	32211	retry scheduled
+1892	1700024596	api-1	INFO	644	32228	timeout waiting on upstream
+1893	1700024609	api-2	WARN	651	32245	wrote batch
+1894	1700024622	worker-a	DEBUG	658	32262	auth ok
+1895	1700024635	worker-b	ERROR	665	32279	rate limited
+1896	1700024648	cache-1	INFO	672	32296	accepted connection
+1897	1700024661	web-1	INFO	679	32313	query ok
+1898	1700024674	web-2	INFO	686	32330	cache miss
+1899	1700024687	api-1	WARN	693	32347	retry scheduled
+1900	1700024700	api-2	DEBUG	700	32364	timeout waiting on upstream
+1901	1700024713	worker-a	ERROR	707	32381	wrote batch
+1902	1700024726	worker-b	INFO	714	32398	auth ok
+1903	1700024739	cache-1	INFO	721	32415	rate limited
+1904	1700024752	web-1	INFO	728	32432	accepted connection
+1905	1700024765	web-2	WARN	735	32449	query ok
+1906	1700024778	api-1	DEBUG	742	32466	cache miss
+1907	1700024791	api-2	ERROR	749	32483	retry scheduled
+1908	1700024804	worker-a	INFO	756	32500	timeout waiting on upstream
+1909	1700024817	worker-b	INFO	763	32517	wrote batch
+1910	1700024830	cache-1	INFO	770	32534	auth ok
+1911	1700024843	web-1	WARN	777	32551	rate limited
+1912	1700024856	web-2	DEBUG	784	32568	accepted connection
+1913	1700024869	api-1	ERROR	791	32585	query ok
+1914	1700024882	api-2	INFO	798	32602	cache miss
+1915	1700024895	worker-a	INFO	805	32619	retry scheduled
+1916	1700024908	worker-b	INFO	812	32636	timeout waiting on upstream
+1917	1700024921	cache-1	WARN	819	32653	wrote batch
+1918	1700024934	web-1	DEBUG	826	32670	auth ok
+1919	1700024947	web-2	ERROR	833	32687	rate limited
+1920	1700024960	api-1	INFO	840	32704	accepted connection
+1921	1700024973	api-2	INFO	847	32721	query ok
+1922	1700024986	worker-a	INFO	854	32738	cache miss
+1923	1700024999	worker-b	WARN	861	32755	retry scheduled
+1924	1700025012	cache-1	DEBUG	868	32772	timeout waiting on upstream
+1925	1700025025	web-1	ERROR	875	32789	wrote batch
+1926	1700025038	web-2	INFO	882	32806	auth ok
+1927	1700025051	api-1	INFO	889	32823	rate limited
+1928	1700025064	api-2	INFO	896	32840	accepted connection
+1929	1700025077	worker-a	WARN	3	32857	query ok
+1930	1700025090	worker-b	DEBUG	10	32874	cache miss
+1931	1700025103	cache-1	ERROR	17	32891	retry scheduled
+1932	1700025116	web-1	INFO	24	32908	timeout waiting on upstream
+1933	1700025129	web-2	INFO	31	32925	wrote batch
+1934	1700025142	api-1	INFO	38	32942	auth ok
+1935	1700025155	api-2	WARN	45	32959	rate limited
+1936	1700025168	worker-a	DEBUG	52	32976	accepted connection
+1937	1700025181	worker-b	ERROR	59	32993	query ok
+1938	1700025194	cache-1	INFO	66	33010	cache miss
+1939	1700025207	web-1	INFO	73	33027	retry scheduled
+1940	1700025220	web-2	INFO	80	33044	timeout waiting on upstream
+1941	1700025233	api-1	WARN	87	33061	wrote batch
+1942	1700025246	api-2	DEBUG	94	33078	auth ok
+1943	1700025259	worker-a	ERROR	101	33095	rate limited
+1944	1700025272	worker-b	INFO	108	33112	accepted connection
+1945	1700025285	cache-1	INFO	115	33129	query ok
+1946	1700025298	web-1	INFO	122	33146	cache miss
+1947	1700025311	web-2	WARN	129	33163	retry scheduled
+1948	1700025324	api-1	DEBUG	136	33180	timeout waiting on upstream
+1949	1700025337	api-2	ERROR	143	33197	wrote batch
+1950	1700025350	worker-a	INFO	150	33214	auth ok
+1951	1700025363	worker-b	INFO	157	33231	rate limited
+1952	1700025376	cache-1	INFO	164	33248	accepted connection
+1953	1700025389	web-1	WARN	171	33265	query ok
+1954	1700025402	web-2	DEBUG	178	33282	cache miss
+1955	1700025415	api-1	ERROR	185	33299	retry scheduled
+1956	1700025428	api-2	INFO	192	33316	timeout waiting on upstream
+1957	1700025441	worker-a	INFO	199	33333	wrote batch
+1958	1700025454	worker-b	INFO	206	33350	auth ok
+1959	1700025467	cache-1	WARN	213	33367	rate limited
+1960	1700025480	web-1	DEBUG	220	33384	accepted connection
+1961	1700025493	web-2	ERROR	227	33401	query ok
+1962	1700025506	api-1	INFO	234	33418	cache miss
+1963	1700025519	api-2	INFO	241	33435	retry scheduled
+1964	1700025532	worker-a	INFO	248	33452	timeout waiting on upstream
+1965	1700025545	worker-b	WARN	255	33469	wrote batch
+1966	1700025558	cache-1	DEBUG	262	33486	auth ok
+1967	1700025571	web-1	ERROR	269	33503	rate limited
+1968	1700025584	web-2	INFO	276	33520	accepted connection
+1969	1700025597	api-1	INFO	283	33537	query ok
+1970	1700025610	api-2	INFO	290	33554	cache miss
+1971	1700025623	worker-a	WARN	297	33571	retry scheduled
+1972	1700025636	worker-b	DEBUG	304	33588	timeout waiting on upstream
+1973	1700025649	cache-1	ERROR	311	33605	wrote batch
+1974	1700025662	web-1	INFO	318	33622	auth ok
+1975	1700025675	web-2	INFO	325	33639	rate limited
+1976	1700025688	api-1	INFO	332	33656	accepted connection
+1977	1700025701	api-2	WARN	339	33673	query ok
+1978	1700025714	worker-a	DEBUG	346	33690	cache miss
+1979	1700025727	worker-b	ERROR	353	33707	retry scheduled
+1980	1700025740	cache-1	INFO	360	33724	timeout waiting on upstream
+1981	1700025753	web-1	INFO	367	33741	wrote batch
+1982	1700025766	web-2	INFO	374	33758	auth ok
+1983	1700025779	api-1	WARN	381	33775	rate limited
+1984	1700025792	api-2	DEBUG	388	33792	accepted connection
+1985	1700025805	worker-a	ERROR	395	33809	query ok
+1986	1700025818	worker-b	INFO	402	33826	cache miss
+1987	1700025831	cache-1	INFO	409	33843	retry scheduled
+1988	1700025844	web-1	INFO	416	33860	timeout waiting on upstream
+1989	1700025857	web-2	WARN	423	33877	wrote batch
+1990	1700025870	api-1	DEBUG	430	33894	auth ok
+1991	1700025883	api-2	ERROR	437	33911	rate limited
+1992	1700025896	worker-a	INFO	444	33928	accepted connection
+1993	1700025909	worker-b	INFO	451	33945	query ok
+1994	1700025922	cache-1	INFO	458	33962	cache miss
+1995	1700025935	web-1	WARN	465	33979	retry scheduled
+1996	1700025948	web-2	DEBUG	472	33996	timeout waiting on upstream
+1997	1700025961	api-1	ERROR	479	34013	wrote batch
+1998	1700025974	api-2	INFO	486	34030	auth ok
+1999	1700025987	worker-a	INFO	493	34047	rate limited
+2000	1700026000	worker-b	INFO	500	34064	accepted connection
+2001	1700026013	cache-1	WARN	507	34081	query ok
+2002	1700026026	web-1	DEBUG	514	34098	cache miss
+2003	1700026039	web-2	ERROR	521	34115	retry scheduled
+2004	1700026052	api-1	INFO	528	34132	timeout waiting on upstream
+2005	1700026065	api-2	INFO	535	34149	wrote batch
+2006	1700026078	worker-a	INFO	542	34166	auth ok
+2007	1700026091	worker-b	WARN	549	34183	rate limited
+2008	1700026104	cache-1	DEBUG	556	34200	accepted connection
+2009	1700026117	web-1	ERROR	563	34217	query ok
+2010	1700026130	web-2	INFO	570	34234	cache miss
+2011	1700026143	api-1	INFO	577	34251	retry scheduled
+2012	1700026156	api-2	INFO	584	34268	timeout waiting on upstream
+2013	1700026169	worker-a	WARN	591	34285	wrote batch
+2014	1700026182	worker-b	DEBUG	598	34302	auth ok
+2015	1700026195	cache-1	ERROR	605	34319	rate limited
+2016	1700026208	web-1	INFO	612	34336	accepted connection
+2017	1700026221	web-2	INFO	619	34353	query ok
+2018	1700026234	api-1	INFO	626	34370	cache miss
+2019	1700026247	api-2	WARN	633	34387	retry scheduled
+2020	1700026260	worker-a	DEBUG	640	34404	timeout waiting on upstream
+2021	1700026273	worker-b	ERROR	647	34421	wrote batch
+2022	1700026286	cache-1	INFO	654	34438	auth ok
+2023	1700026299	web-1	INFO	661	34455	rate limited
+2024	1700026312	web-2	INFO	668	34472	accepted connection
+2025	1700026325	api-1	WARN	675	34489	query ok
+2026	1700026338	api-2	DEBUG	682	34506	cache miss
+2027	1700026351	worker-a	ERROR	689	34523	retry scheduled
+2028	1700026364	worker-b	INFO	696	34540	timeout waiting on upstream
+2029	1700026377	cache-1	INFO	703	34557	wrote batch
+2030	1700026390	web-1	INFO	710	34574	auth ok
+2031	1700026403	web-2	WARN	717	34591	rate limited
+2032	1700026416	api-1	DEBUG	724	34608	accepted connection
+2033	1700026429	api-2	ERROR	731	34625	query ok
+2034	1700026442	worker-a	INFO	738	34642	cache miss
+2035	1700026455	worker-b	INFO	745	34659	retry scheduled
+2036	1700026468	cache-1	INFO	752	34676	timeout waiting on upstream
+2037	1700026481	web-1	WARN	759	34693	wrote batch
+2038	1700026494	web-2	DEBUG	766	34710	auth ok
+2039	1700026507	api-1	ERROR	773	34727	rate limited
+2040	1700026520	api-2	INFO	780	34744	accepted connection
+2041	1700026533	worker-a	INFO	787	34761	query ok
+2042	1700026546	worker-b	INFO	794	34778	cache miss
+2043	1700026559	cache-1	WARN	801	34795	retry scheduled
+2044	1700026572	web-1	DEBUG	808	34812	timeout waiting on upstream
+2045	1700026585	web-2	ERROR	815	34829	wrote batch
+2046	1700026598	api-1	INFO	822	34846	auth ok
+2047	1700026611	api-2	INFO	829	34863	rate limited
+2048	1700026624	worker-a	INFO	836	34880	accepted connection
+2049	1700026637	worker-b	WARN	843	34897	query ok
+2050	1700026650	cache-1	DEBUG	850	34914	cache miss
+2051	1700026663	web-1	ERROR	857	34931	retry scheduled
+2052	1700026676	web-2	INFO	864	34948	timeout waiting on upstream
+2053	1700026689	api-1	INFO	871	34965	wrote batch
+2054	1700026702	api-2	INFO	878	34982	auth ok
+2055	1700026715	worker-a	WARN	885	34999	rate limited
+2056	1700026728	worker-b	DEBUG	892	35016	accepted connection
+2057	1700026741	cache-1	ERROR	899	35033	query ok
+2058	1700026754	web-1	INFO	6	35050	cache miss
+2059	1700026767	web-2	INFO	13	35067	retry scheduled
+2060	1700026780	api-1	INFO	20	35084	timeout waiting on upstream
+2061	1700026793	api-2	WARN	27	35101	wrote batch
+2062	1700026806	worker-a	DEBUG	34	35118	auth ok
+2063	1700026819	worker-b	ERROR	41	35135	rate limited
+2064	1700026832	cache-1	INFO	48	35152	accepted connection
+2065	1700026845	web-1	INFO	55	35169	query ok
+2066	1700026858	web-2	INFO	62	35186	cache miss
+2067	1700026871	api-1	WARN	69	35203	retry scheduled
+2068	1700026884	api-2	DEBUG	76	35220	timeout waiting on upstream
+2069	1700026897	worker-a	ERROR	83	35237	wrote batch
+2070	1700026910	worker-b	INFO	90	35254	auth ok
+2071	1700026923	cache-1	INFO	97	35271	rate limited
+2072	1700026936	web-1	INFO	104	35288	accepted connection
+2073	1700026949	web-2	WARN	111	35305	query ok
+2074	1700026962	api-1	DEBUG	118	35322	cache miss
+2075	1700026975	api-2	ERROR	125	35339	retry scheduled
+2076	1700026988	worker-a	INFO	132	35356	timeout waiting on upstream
+2077	1700027001	worker-b	INFO	139	35373	wrote batch
+2078	1700027014	cache-1	INFO	146	35390	auth ok
+2079	1700027027	web-1	WARN	153	35407	rate limited
+2080	1700027040	web-2	DEBUG	160	35424	accepted connection
+2081	1700027053	api-1	ERROR	167	35441	query ok
+2082	1700027066	api-2	INFO	174	35458	cache miss
+2083	1700027079	worker-a	INFO	181	35475	retry scheduled
+2084	1700027092	worker-b	INFO	188	35492	timeout waiting on upstream
+2085	1700027105	cache-1	WARN	195	35509	wrote batch
+2086	1700027118	web-1	DEBUG	202	35526	auth ok
+2087	1700027131	web-2	ERROR	209	35543	rate limited
+2088	1700027144	api-1	INFO	216	35560	accepted connection
+2089	1700027157	api-2	INFO	223	35577	query ok
+2090	1700027170	worker-a	INFO	230	35594	cache miss
+2091	1700027183	worker-b	WARN	237	35611	retry scheduled
+2092	1700027196	cache-1	DEBUG	244	35628	timeout waiting on upstream
+2093	1700027209	web-1	ERROR	251	35645	wrote batch
+2094	1700027222	web-2	INFO	258	35662	auth ok
+2095	1700027235	api-1	INFO	265	35679	rate limited
+2096	1700027248	api-2	INFO	272	35696	accepted connection
+2097	1700027261	worker-a	WARN	279	35713	query ok
+2098	1700027274	worker-b	DEBUG	286	35730	cache miss
+2099	1700027287	cache-1	ERROR	293	35747	retry scheduled
+2100	1700027300	web-1	INFO	300	35764	timeout waiting on upstream
+2101	1700027313	web-2	INFO	307	35781	wrote batch
+2102	1700027326	api-1	INFO	314	35798	auth ok
+2103	1700027339	api-2	WARN	321	35815	rate limited
+2104	1700027352	worker-a	DEBUG	328	35832	accepted connection
+2105	1700027365	worker-b	ERROR	335	35849	query ok
+2106	1700027378	cache-1	INFO	342	35866	cache miss
+2107	1700027391	web-1	INFO	349	35883	retry scheduled
+2108	1700027404	web-2	INFO	356	35900	timeout waiting on upstream
+2109	1700027417	api-1	WARN	363	35917	wrote batch
+2110	1700027430	api-2	DEBUG	370	35934	auth ok
+2111	1700027443	worker-a	ERROR	377	35951	rate limited
+2112	1700027456	worker-b	INFO	384	35968	accepted connection
+2113	1700027469	cache-1	INFO	391	35985	query ok
+2114	1700027482	web-1	INFO	398	36002	cache miss
+2115	1700027495	web-2	WARN	405	36019	retry scheduled
+2116	1700027508	api-1	DEBUG	412	36036	timeout waiting on upstream
+2117	1700027521	api-2	ERROR	419	36053	wrote batch
+2118	1700027534	worker-a	INFO	426	36070	auth ok
+2119	1700027547	worker-b	INFO	433	36087	rate limited
+2120	1700027560	cache-1	INFO	440	36104	accepted connection
+2121	1700027573	web-1	WARN	447	36121	query ok
+2122	1700027586	web-2	DEBUG	454	36138	cache miss
+2123	1700027599	api-1	ERROR	461	36155	retry scheduled
+2124	1700027612	api-2	INFO	468	36172	timeout waiting on upstream
+2125	1700027625	worker-a	INFO	475	36189	wrote batch
+2126	1700027638	worker-b	INFO	482	36206	auth ok
+2127	1700027651	cache-1	WARN	489	36223	rate limited
+2128	1700027664	web-1	DEBUG	496	36240	accepted connection
+2129	1700027677	web-2	ERROR	503	36257	query ok
+2130	1700027690	api-1	INFO	510	36274	cache miss
+2131	1700027703	api-2	INFO	517	36291	retry scheduled
+2132	1700027716	worker-a	INFO	524	36308	timeout waiting on upstream
+2133	1700027729	worker-b	WARN	531	36325	wrote batch
+2134	1700027742	cache-1	DEBUG	538	36342	auth ok
+2135	1700027755	web-1	ERROR	545	36359	rate limited
+2136	1700027768	web-2	INFO	552	36376	accepted connection
+2137	1700027781	api-1	INFO	559	36393	query ok
+2138	1700027794	api-2	INFO	566	36410	cache miss
+2139	1700027807	worker-a	WARN	573	36427	retry scheduled
+2140	1700027820	worker-b	DEBUG	580	36444	timeout waiting on upstream
+2141	1700027833	cache-1	ERROR	587	36461	wrote batch
+2142	1700027846	web-1	INFO	594	36478	auth ok
+2143	1700027859	web-2	INFO	601	36495	rate limited
+2144	1700027872	api-1	INFO	608	36512	accepted connection
+2145	1700027885	api-2	WARN	615	36529	query ok
+2146	1700027898	worker-a	DEBUG	622	36546	cache miss
+2147	1700027911	worker-b	ERROR	629	36563	retry scheduled
+2148	1700027924	cache-1	INFO	636	36580	timeout waiting on upstream
+2149	1700027937	web-1	INFO	643	36597	wrote batch
+2150	1700027950	web-2	INFO	650	36614	auth ok
+2151	1700027963	api-1	WARN	657	36631	rate limited
+2152	1700027976	api-2	DEBUG	664	36648	accepted connection
+2153	1700027989	worker-a	ERROR	671	36665	query ok
+2154	1700028002	worker-b	INFO	678	36682	cache miss
+2155	1700028015	cache-1	INFO	685	36699	retry scheduled
+2156	1700028028	web-1	INFO	692	36716	timeout waiting on upstream
+2157	1700028041	web-2	WARN	699	36733	wrote batch
+2158	1700028054	api-1	DEBUG	706	36750	auth ok
+2159	1700028067	api-2	ERROR	713	36767	rate limited
+2160	1700028080	worker-a	INFO	720	36784	accepted connection
+2161	1700028093	worker-b	INFO	727	36801	query ok
+2162	1700028106	cache-1	INFO	734	36818	cache miss
+2163	1700028119	web-1	WARN	741	36835	retry scheduled
+2164	1700028132	web-2	DEBUG	748	36852	timeout waiting on upstream
+2165	1700028145	api-1	ERROR	755	36869	wrote batch
+2166	1700028158	api-2	INFO	762	36886	auth ok
+2167	1700028171	worker-a	INFO	769	36903	rate limited
+2168	1700028184	worker-b	INFO	776	36920	accepted connection
+2169	1700028197	cache-1	WARN	783	36937	query ok
+2170	1700028210	web-1	DEBUG	790	36954	cache miss
+2171	1700028223	web-2	ERROR	797	36971	retry scheduled
+2172	1700028236	api-1	INFO	804	36988	timeout waiting on upstream
+2173	1700028249	api-2	INFO	811	37005	wrote batch
+2174	1700028262	worker-a	INFO	818	37022	auth ok
+2175	1700028275	worker-b	WARN	825	37039	rate limited
+2176	1700028288	cache-1	DEBUG	832	37056	accepted connection
+2177	1700028301	web-1	ERROR	839	37073	query ok
+2178	1700028314	web-2	INFO	846	37090	cache miss
+2179	1700028327	api-1	INFO	853	37107	retry scheduled
+2180	1700028340	api-2	INFO	860	37124	timeout waiting on upstream
+2181	1700028353	worker-a	WARN	867	37141	wrote batch
+2182	1700028366	worker-b	DEBUG	874	37158	auth ok
+2183	1700028379	cache-1	ERROR	881	37175	rate limited
+2184	1700028392	web-1	INFO	888	37192	accepted connection
+2185	1700028405	web-2	INFO	895	37209	query ok
+2186	1700028418	api-1	INFO	2	37226	cache miss
+2187	1700028431	api-2	WARN	9	37243	retry scheduled
+2188	1700028444	worker-a	DEBUG	16	37260	timeout waiting on upstream
+2189	1700028457	worker-b	ERROR	23	37277	wrote batch
+2190	1700028470	cache-1	INFO	30	37294	auth ok
+2191	1700028483	web-1	INFO	37	37311	rate limited
+2192	1700028496	web-2	INFO	44	37328	accepted connection
+2193	1700028509	api-1	WARN	51	37345	query ok
+2194	1700028522	api-2	DEBUG	58	37362	cache miss
+2195	1700028535	worker-a	ERROR	65	37379	retry scheduled
+2196	1700028548	worker-b	INFO	72	37396	timeout waiting on upstream
+2197	1700028561	cache-1	INFO	79	37413	wrote batch
+2198	1700028574	web-1	INFO	86	37430	auth ok
+2199	1700028587	web-2	WARN	93	37447	rate limited
+2200	1700028600	api-1	DEBUG	100	37464	accepted connection
+2201	1700028613	api-2	ERROR	107	37481	query ok
+2202	1700028626	worker-a	INFO	114	37498	cache miss
+2203	1700028639	worker-b	INFO	121	37515	retry scheduled
+2204	1700028652	cache-1	INFO	128	37532	timeout waiting on upstream
+2205	1700028665	web-1	WARN	135	37549	wrote batch
+2206	1700028678	web-2	DEBUG	142	37566	auth ok
+2207	1700028691	api-1	ERROR	149	37583	rate limited
+2208	1700028704	api-2	INFO	156	37600	accepted connection
+2209	1700028717	worker-a	INFO	163	37617	query ok
+2210	1700028730	worker-b	INFO	170	37634	cache miss
+2211	1700028743	cache-1	WARN	177	37651	retry scheduled
+2212	1700028756	web-1	DEBUG	184	37668	timeout waiting on upstream
+2213	1700028769	web-2	ERROR	191	37685	wrote batch
+2214	1700028782	api-1	INFO	198	37702	auth ok
+2215	1700028795	api-2	INFO	205	37719	rate limited
+2216	1700028808	worker-a	INFO	212	37736	accepted connection
+2217	1700028821	worker-b	WARN	219	37753	query ok
+2218	1700028834	cache-1	DEBUG	226	37770	cache miss
+2219	1700028847	web-1	ERROR	233	37787	retry scheduled
+2220	1700028860	web-2	INFO	240	37804	timeout waiting on upstream
+2221	1700028873	api-1	INFO	247	37821	wrote batch
+2222	1700028886	api-2	INFO	254	37838	auth ok
+2223	1700028899	worker-a	WARN	261	37855	rate limited
+2224	1700028912	worker-b	DEBUG	268	37872	accepted connection
+2225	1700028925	cache-1	ERROR	275	37889	query ok
+2226	1700028938	web-1	INFO	282	37906	cache miss
+2227	1700028951	web-2	INFO	289	37923	retry scheduled
+2228	1700028964	api-1	INFO	296	37940	timeout waiting on upstream
+2229	1700028977	api-2	WARN	303	37957	wrote batch
+2230	1700028990	worker-a	DEBUG	310	37974	auth ok
+2231	1700029003	worker-b	ERROR	317	37991	rate limited
+2232	1700029016	cache-1	INFO	324	38008	accepted connection
+2233	1700029029	web-1	INFO	331	38025	query ok
+2234	1700029042	web-2	INFO	338	38042	cache miss
+2235	1700029055	api-1	WARN	345	38059	retry scheduled
+2236	1700029068	api-2	DEBUG	352	38076	timeout waiting on upstream
+2237	1700029081	worker-a	ERROR	359	38093	wrote batch
+2238	1700029094	worker-b	INFO	366	38110	auth ok
+2239	1700029107	cache-1	INFO	373	38127	rate limited
+2240	1700029120	web-1	INFO	380	38144	accepted connection
+2241	1700029133	web-2	WARN	387	38161	query ok
+2242	1700029146	api-1	DEBUG	394	38178	cache miss
+2243	1700029159	api-2	ERROR	401	38195	retry scheduled
+2244	1700029172	worker-a	INFO	408	38212	timeout waiting on upstream
+2245	1700029185	worker-b	INFO	415	38229	wrote batch
+2246	1700029198	cache-1	INFO	422	38246	auth ok
+2247	1700029211	web-1	WARN	429	38263	rate limited
+2248	1700029224	web-2	DEBUG	436	38280	accepted connection
+2249	1700029237	api-1	ERROR	443	38297	query ok
+2250	1700029250	api-2	INFO	450	38314	cache miss
+2251	1700029263	worker-a	INFO	457	38331	retry scheduled
+2252	1700029276	worker-b	INFO	464	38348	timeout waiting on upstream
+2253	1700029289	cache-1	WARN	471	38365	wrote batch
+2254	1700029302	web-1	DEBUG	478	38382	auth ok
+2255	1700029315	web-2	ERROR	485	38399	rate limited
+2256	1700029328	api-1	INFO	492	38416	accepted connection
+2257	1700029341	api-2	INFO	499	38433	query ok
+2258	1700029354	worker-a	INFO	506	38450	cache miss
+2259	1700029367	worker-b	WARN	513	38467	retry scheduled
+2260	1700029380	cache-1	DEBUG	520	38484	timeout waiting on upstream
+2261	1700029393	web-1	ERROR	527	38501	wrote batch
+2262	1700029406	web-2	INFO	534	38518	auth ok
+2263	1700029419	api-1	INFO	541	38535	rate limited
+2264	1700029432	api-2	INFO	548	38552	accepted connection
+2265	1700029445	worker-a	WARN	555	38569	query ok
+2266	1700029458	worker-b	DEBUG	562	38586	cache miss
+2267	1700029471	cache-1	ERROR	569	38603	retry scheduled
+2268	1700029484	web-1	INFO	576	38620	timeout waiting on upstream
+2269	1700029497	web-2	INFO	583	38637	wrote batch
+2270	1700029510	api-1	INFO	590	38654	auth ok
+2271	1700029523	api-2	WARN	597	38671	rate limited
+2272	1700029536	worker-a	DEBUG	604	38688	accepted connection
+2273	1700029549	worker-b	ERROR	611	38705	query ok
+2274	1700029562	cache-1	INFO	618	38722	cache miss
+2275	1700029575	web-1	INFO	625	38739	retry scheduled
+2276	1700029588	web-2	INFO	632	38756	timeout waiting on upstream
+2277	1700029601	api-1	WARN	639	38773	wrote batch
+2278	1700029614	api-2	DEBUG	646	38790	auth ok
+2279	1700029627	worker-a	ERROR	653	38807	rate limited
+2280	1700029640	worker-b	INFO	660	38824	accepted connection
+2281	1700029653	cache-1	INFO	667	38841	query ok
+2282	1700029666	web-1	INFO	674	38858	cache miss
+2283	1700029679	web-2	WARN	681	38875	retry scheduled
+2284	1700029692	api-1	DEBUG	688	38892	timeout waiting on upstream
+2285	1700029705	api-2	ERROR	695	38909	wrote batch
+2286	1700029718	worker-a	INFO	702	38926	auth ok
+2287	1700029731	worker-b	INFO	709	38943	rate limited
+2288	1700029744	cache-1	INFO	716	38960	accepted connection
+2289	1700029757	web-1	WARN	723	38977	query ok
+2290	1700029770	web-2	DEBUG	730	38994	cache miss
+2291	1700029783	api-1	ERROR	737	39011	retry scheduled
+2292	1700029796	api-2	INFO	744	39028	timeout waiting on upstream
+2293	1700029809	worker-a	INFO	751	39045	wrote batch
+2294	1700029822	worker-b	INFO	758	39062	auth ok
+2295	1700029835	cache-1	WARN	765	39079	rate limited
+2296	1700029848	web-1	DEBUG	772	39096	accepted connection
+2297	1700029861	web-2	ERROR	779	39113	query ok
+2298	1700029874	api-1	INFO	786	39130	cache miss
+2299	1700029887	api-2	INFO	793	39147	retry scheduled
+2300	1700029900	worker-a	INFO	800	39164	timeout waiting on upstream
+2301	1700029913	worker-b	WARN	807	39181	wrote batch
+2302	1700029926	cache-1	DEBUG	814	39198	auth ok
+2303	1700029939	web-1	ERROR	821	39215	rate limited
+2304	1700029952	web-2	INFO	828	39232	accepted connection
+2305	1700029965	api-1	INFO	835	39249	query ok
+2306	1700029978	api-2	INFO	842	39266	cache miss
+2307	1700029991	worker-a	WARN	849	39283	retry scheduled
+2308	1700030004	worker-b	DEBUG	856	39300	timeout waiting on upstream
+2309	1700030017	cache-1	ERROR	863	39317	wrote batch
+2310	1700030030	web-1	INFO	870	39334	auth ok
+2311	1700030043	web-2	INFO	877	39351	rate limited
+2312	1700030056	api-1	INFO	884	39368	accepted connection
+2313	1700030069	api-2	WARN	891	39385	query ok
+2314	1700030082	worker-a	DEBUG	898	39402	cache miss
+2315	1700030095	worker-b	ERROR	5	39419	retry scheduled
+2316	1700030108	cache-1	INFO	12	39436	timeout waiting on upstream
+2317	1700030121	web-1	INFO	19	39453	wrote batch
+2318	1700030134	web-2	INFO	26	39470	auth ok
+2319	1700030147	api-1	WARN	33	39487	rate limited
+2320	1700030160	api-2	DEBUG	40	39504	accepted connection
+2321	1700030173	worker-a	ERROR	47	39521	query ok
+2322	1700030186	worker-b	INFO	54	39538	cache miss
+2323	1700030199	cache-1	INFO	61	39555	retry scheduled
+2324	1700030212	web-1	INFO	68	39572	timeout waiting on upstream
+2325	1700030225	web-2	WARN	75	39589	wrote batch
+2326	1700030238	api-1	DEBUG	82	39606	auth ok
+2327	1700030251	api-2	ERROR	89	39623	rate limited
+2328	1700030264	worker-a	INFO	96	39640	accepted connection
+2329	1700030277	worker-b	INFO	103	39657	query ok
+2330	1700030290	cache-1	INFO	110	39674	cache miss
+2331	1700030303	web-1	WARN	117	39691	retry scheduled
+2332	1700030316	web-2	DEBUG	124	39708	timeout waiting on upstream
+2333	1700030329	api-1	ERROR	131	39725	wrote batch
+2334	1700030342	api-2	INFO	138	39742	auth ok
+2335	1700030355	worker-a	INFO	145	39759	rate limited
+2336	1700030368	worker-b	INFO	152	39776	accepted connection
+2337	1700030381	cache-1	WARN	159	39793	query ok
+2338	1700030394	web-1	DEBUG	166	39810	cache miss
+2339	1700030407	web-2	ERROR	173	39827	retry scheduled
+2340	1700030420	api-1	INFO	180	39844	timeout waiting on upstream
+2341	1700030433	api-2	INFO	187	39861	wrote batch
+2342	1700030446	worker-a	INFO	194	39878	auth ok
+2343	1700030459	worker-b	WARN	201	39895	rate limited
+2344	1700030472	cache-1	DEBUG	208	39912	accepted connection
+2345	1700030485	web-1	ERROR	215	39929	query ok
+2346	1700030498	web-2	INFO	222	39946	cache miss
+2347	1700030511	api-1	INFO	229	39963	retry scheduled
+2348	1700030524	api-2	INFO	236	39980	timeout waiting on upstream
+2349	1700030537	worker-a	WARN	243	39997	wrote batch
+2350	1700030550	worker-b	DEBUG	250	40014	auth ok
+2351	1700030563	cache-1	ERROR	257	40031	rate limited
+2352	1700030576	web-1	INFO	264	40048	accepted connection
+2353	1700030589	web-2	INFO	271	40065	query ok
+2354	1700030602	api-1	INFO	278	40082	cache miss
+2355	1700030615	api-2	WARN	285	40099	retry scheduled
+2356	1700030628	worker-a	DEBUG	292	40116	timeout waiting on upstream
+2357	1700030641	worker-b	ERROR	299	40133	wrote batch
+2358	1700030654	cache-1	INFO	306	40150	auth ok
+2359	1700030667	web-1	INFO	313	40167	rate limited
+2360	1700030680	web-2	INFO	320	40184	accepted connection
+2361	1700030693	api-1	WARN	327	40201	query ok
+2362	1700030706	api-2	DEBUG	334	40218	cache miss
+2363	1700030719	worker-a	ERROR	341	40235	retry scheduled
+2364	1700030732	worker-b	INFO	348	40252	timeout waiting on upstream
+2365	1700030745	cache-1	INFO	355	40269	wrote batch
+2366	1700030758	web-1	INFO	362	40286	auth ok
+2367	1700030771	web-2	WARN	369	40303	rate limited
+2368	1700030784	api-1	DEBUG	376	40320	accepted connection
+2369	1700030797	api-2	ERROR	383	40337	query ok
+2370	1700030810	worker-a	INFO	390	40354	cache miss
+2371	1700030823	worker-b	INFO	397	40371	retry scheduled
+2372	1700030836	cache-1	INFO	404	40388	timeout waiting on upstream
+2373	1700030849	web-1	WARN	411	40405	wrote batch
+2374	1700030862	web-2	DEBUG	418	40422	auth ok
+2375	1700030875	api-1	ERROR	425	40439	rate limited
+2376	1700030888	api-2	INFO	432	40456	accepted connection
+2377	1700030901	worker-a	INFO	439	40473	query ok
+2378	1700030914	worker-b	INFO	446	40490	cache miss
+2379	1700030927	cache-1	WARN	453	40507	retry scheduled
+2380	1700030940	web-1	DEBUG	460	40524	timeout waiting on upstream
+2381	1700030953	web-2	ERROR	467	40541	wrote batch
+2382	1700030966	api-1	INFO	474	40558	auth ok
+2383	1700030979	api-2	INFO	481	40575	rate limited
+2384	1700030992	worker-a	INFO	488	40592	accepted connection
+2385	1700031005	worker-b	WARN	495	40609	query ok
+2386	1700031018	cache-1	DEBUG	502	40626	cache miss
+2387	1700031031	web-1	ERROR	509	40643	retry scheduled
+2388	1700031044	web-2	INFO	516	40660	timeout waiting on upstream
+2389	1700031057	api-1	INFO	523	40677	wrote batch
+2390	1700031070	api-2	INFO	530	40694	auth ok
+2391	1700031083	worker-a	WARN	537	40711	rate limited
+2392	1700031096	worker-b	DEBUG	544	40728	accepted connection
+2393	1700031109	cache-1	ERROR	551	40745	query ok
+2394	1700031122	web-1	INFO	558	40762	cache miss
+2395	1700031135	web-2	INFO	565	40779	retry scheduled
+2396	1700031148	api-1	INFO	572	40796	timeout waiting on upstream
+2397	1700031161	api-2	WARN	579	40813	wrote batch
+2398	1700031174	worker-a	DEBUG	586	40830	auth ok
+2399	1700031187	worker-b	ERROR	593	40847	rate limited
+2400	1700031200	cache-1	INFO	600	40864	accepted connection
+2401	1700031213	web-1	INFO	607	40881	query ok
+2402	1700031226	web-2	INFO	614	40898	cache miss
+2403	1700031239	api-1	WARN	621	40915	retry scheduled
+2404	1700031252	api-2	DEBUG	628	40932	timeout waiting on upstream
+2405	1700031265	worker-a	ERROR	635	40949	wrote batch
+2406	1700031278	worker-b	INFO	642	40966	auth ok
+2407	1700031291	cache-1	INFO	649	40983	rate limited
+2408	1700031304	web-1	INFO	656	41000	accepted connection
+2409	1700031317	web-2	WARN	663	41017	query ok
+2410	1700031330	api-1	DEBUG	670	41034	cache miss
+2411	1700031343	api-2	ERROR	677	41051	retry scheduled
+2412	1700031356	worker-a	INFO	684	41068	timeout waiting on upstream
+2413	1700031369	worker-b	INFO	691	41085	wrote batch
+2414	1700031382	cache-1	INFO	698	41102	auth ok
+2415	1700031395	web-1	WARN	705	41119	rate limited
+2416	1700031408	web-2	DEBUG	712	41136	accepted connection
+2417	1700031421	api-1	ERROR	719	41153	query ok
+2418	1700031434	api-2	INFO	726	41170	cache miss
+2419	1700031447	worker-a	INFO	733	41187	retry scheduled
+2420	1700031460	worker-b	INFO	740	41204	timeout waiting on upstream
+2421	1700031473	cache-1	WARN	747	41221	wrote batch
+2422	1700031486	web-1	DEBUG	754	41238	auth ok
+2423	1700031499	web-2	ERROR	761	41255	rate limited
+2424	1700031512	api-1	INFO	768	41272	accepted connection
+2425	1700031525	api-2	INFO	775	41289	query ok
+2426	1700031538	worker-a	INFO	782	41306	cache miss
+2427	1700031551	worker-b	WARN	789	41323	retry scheduled
+2428	1700031564	cache-1	DEBUG	796	41340	timeout waiting on upstream
+2429	1700031577	web-1	ERROR	803	41357	wrote batch
+2430	1700031590	web-2	INFO	810	41374	auth ok
+2431	1700031603	api-1	INFO	817	41391	rate limited
+2432	1700031616	api-2	INFO	824	41408	accepted connection
+2433	1700031629	worker-a	WARN	831	41425	query ok
+2434	1700031642	worker-b	DEBUG	838	41442	cache miss
+2435	1700031655	cache-1	ERROR	845	41459	retry scheduled
+2436	1700031668	web-1	INFO	852	41476	timeout waiting on upstream
+2437	1700031681	web-2	INFO	859	41493	wrote batch
+2438	1700031694	api-1	INFO	866	41510	auth ok
+2439	1700031707	api-2	WARN	873	41527	rate limited
+2440	1700031720	worker-a	DEBUG	880	41544	accepted connection
+2441	1700031733	worker-b	ERROR	887	41561	query ok
+2442	1700031746	cache-1	INFO	894	41578	cache miss
+2443	1700031759	web-1	INFO	1	41595	retry scheduled
+2444	1700031772	web-2	INFO	8	41612	timeout waiting on upstream
+2445	1700031785	api-1	WARN	15	41629	wrote batch
+2446	1700031798	api-2	DEBUG	22	41646	auth ok
+2447	1700031811	worker-a	ERROR	29	41663	rate limited
+2448	1700031824	worker-b	INFO	36	41680	accepted connection
+2449	1700031837	cache-1	INFO	43	41697	query ok
+2450	1700031850	web-1	INFO	50	41714	cache miss
+2451	1700031863	web-2	WARN	57	41731	retry scheduled
+2452	1700031876	api-1	DEBUG	64	41748	timeout waiting on upstream
+2453	1700031889	api-2	ERROR	71	41765	wrote batch
+2454	1700031902	worker-a	INFO	78	41782	auth ok
+2455	1700031915	worker-b	INFO	85	41799	rate limited
+2456	1700031928	cache-1	INFO	92	41816	accepted connection
+2457	1700031941	web-1	WARN	99	41833	query ok
+2458	1700031954	web-2	DEBUG	106	41850	cache miss
+2459	1700031967	api-1	ERROR	113	41867	retry scheduled
+2460	1700031980	api-2	INFO	120	41884	timeout waiting on upstream
+2461	1700031993	worker-a	INFO	127	41901	wrote batch
+2462	1700032006	worker-b	INFO	134	41918	auth ok
+2463	1700032019	cache-1	WARN	141	41935	rate limited
+2464	1700032032	web-1	DEBUG	148	41952	accepted connection
+2465	1700032045	web-2	ERROR	155	41969	query ok
+2466	1700032058	api-1	INFO	162	41986	cache miss
+2467	1700032071	api-2	INFO	169	42003	retry scheduled
+2468	1700032084	worker-a	INFO	176	42020	timeout waiting on upstream
+2469	1700032097	worker-b	WARN	183	42037	wrote batch
+2470	1700032110	cache-1	DEBUG	190	42054	auth ok
+2471	1700032123	web-1	ERROR	197	42071	rate limited
+2472	1700032136	web-2	INFO	204	42088	accepted connection
+2473	1700032149	api-1	INFO	211	42105	query ok
+2474	1700032162	api-2	INFO	218	42122	cache miss
+2475	1700032175	worker-a	WARN	225	42139	retry scheduled
+2476	1700032188	worker-b	DEBUG	232	42156	timeout waiting on upstream
+2477	1700032201	cache-1	ERROR	239	42173	wrote batch
+2478	1700032214	web-1	INFO	246	42190	auth ok
+2479	1700032227	web-2	INFO	253	42207	rate limited
+2480	1700032240	api-1	INFO	260	42224	accepted connection
+2481	1700032253	api-2	WARN	267	42241	query ok
+2482	1700032266	worker-a	DEBUG	274	42258	cache miss
+2483	1700032279	worker-b	ERROR	281	42275	retry scheduled
+2484	1700032292	cache-1	INFO	288	42292	timeout waiting on upstream
+2485	1700032305	web-1	INFO	295	42309	wrote batch
+2486	1700032318	web-2	INFO	302	42326	auth ok
+2487	1700032331	api-1	WARN	309	42343	rate limited
+2488	1700032344	api-2	DEBUG	316	42360	accepted connection
+2489	1700032357	worker-a	ERROR	323	42377	query ok
+2490	1700032370	worker-b	INFO	330	42394	cache miss
+2491	1700032383	cache-1	INFO	337	42411	retry scheduled
+2492	1700032396	web-1	INFO	344	42428	timeout waiting on upstream
+2493	1700032409	web-2	WARN	351	42445	wrote batch
+2494	1700032422	api-1	DEBUG	358	42462	auth ok
+2495	1700032435	api-2	ERROR	365	42479	rate limited
+2496	1700032448	worker-a	INFO	372	42496	accepted connection
+2497	1700032461	worker-b	INFO	379	42513	query ok
+2498	1700032474	cache-1	INFO	386	42530	cache miss
+2499	1700032487	web-1	WARN	393	42547	retry scheduled
+2500	1700032500	web-2	DEBUG	400	42564	timeout waiting on upstream

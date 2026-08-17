@@ -1,0 +1,7 @@
+id,name,email,phone,region,notes
+1,Sam Lee,sam@example.com,,west,
+2,Riley Chen,,555-0102,east,call back
+3,,,555-0199,east,incomplete
+4,Jordan Patel,jp@example.com,555-0144,,vip
+5,Alex Kim,alex@example.com,555-0110,west,""
+6,Morgan Diaz,,,central,no contact
