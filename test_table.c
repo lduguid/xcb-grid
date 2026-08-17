@@ -18,7 +18,7 @@ int main(void)
     Table t;
     const char *cell;
 
-    expect(table_open(&t, "/home/luke/xcb-grid/testdata/people.tsv"), "open people");
+    expect(table_open(&t, "testdata/people.tsv"), "open people");
     expect(t.ncols == 5, "people cols");
     expect(t.nrows == 15, "people rows");
     expect(t.delim == '\t', "people delim");
@@ -30,7 +30,7 @@ int main(void)
     expect(cell && !strcmp(cell, "Alice Nguyen"), "first name");
     table_close(&t);
 
-    expect(table_open(&t, "/home/luke/xcb-grid/testdata/sales.csv"), "open sales");
+    expect(table_open(&t, "testdata/sales.csv"), "open sales");
     expect(t.delim == ',', "sales delim");
     expect(t.cols[0].type == COL_INT, "order_id int");
     expect(t.cols[5].type == COL_FLOAT, "unit_price float");
@@ -41,7 +41,7 @@ int main(void)
     expect(cell && strchr(cell, '"'), "escaped quotes");
     table_close(&t);
 
-    expect(table_open(&t, "/home/luke/xcb-grid/testdata/big_log.tsv"), "open big");
+    expect(table_open(&t, "testdata/big_log.tsv"), "open big");
     expect(t.nrows == 2500, "big rows");
     expect(t.cols[0].type == COL_INT, "id int");
     expect(t.cols[4].type == COL_INT, "latency int");
@@ -54,12 +54,12 @@ int main(void)
     expect(cell && !strcmp(cell, "1201"), "row 1201 id");
     table_close(&t);
 
-    expect(table_open(&t, "/home/luke/xcb-grid/testdata/scientific.tsv"), "open sci");
+    expect(table_open(&t, "testdata/scientific.tsv"), "open sci");
     expect(t.cols[1].type == COL_FLOAT, "mass float");
     expect(t.cols[2].type == COL_FLOAT, "charge float");
     table_close(&t);
 
-    expect(table_open(&t, "/home/luke/xcb-grid/testdata/empty_cells.csv"), "open empty");
+    expect(table_open(&t, "testdata/empty_cells.csv"), "open empty");
     expect(t.cols[0].type == COL_INT, "id still int");
     expect(t.cols[2].type == COL_STRING, "email string");
     table_close(&t);
